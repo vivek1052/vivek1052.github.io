@@ -16,7 +16,7 @@ export default function TopCard({
       />
       <div className="print:relative print:p-0 absolute z-10 top-0 left-0 w-full h-full p-8 bg-black bg-opacity-60">
         <img
-          src="/avatar.jpg"
+          src="/avatar.png"
           alt=""
           className="print:hidden border-4 rounded-full w-80 mx-auto"
         />
