@@ -24,6 +24,14 @@ interface UserData {
     toDate: string;
     points: string[];
   }[];
+  education: {
+    title: string;
+    institute: string;
+    fromDate: string;
+    toDate: string;
+    score: string;
+    points: string[];
+  }[];
 }
 
 const userData: UserData = {
@@ -73,7 +81,7 @@ const userData: UserData = {
       items: [
         { name: "REST+HATEOAS", level: 5 },
         { name: "Odata", level: 5 },
-        { name: "Message Queues/Events", level: 5 },
+        { name: "Message Queues", level: 5 },
         { name: "GraphQL", level: 3 },
         { name: "gRPC", level: 2 },
       ],
@@ -154,6 +162,36 @@ const userData: UserData = {
         `Acted as fullstack developer working with CRM ABAP and UI5 for Konica Minolta.`,
         `Acted as ABAP developer for West Pharmaceuticals. Carried out performance improvement for BOM explosion report.`,
       ],
+    },
+  ],
+  education: [
+    {
+      title: "BTech in Electronics and Communications Engineering",
+      institute: "VIT University",
+      fromDate: "2012",
+      toDate: "2016",
+      score: "9.01 CGPA",
+      points: [
+        "Won Texas Instruments Analog Challenge along with Tech Events and multiple Best Project Awards.",
+        "Worked on IoT based Remote Surveillance Projects recognized by College.",
+        "Worked on LMS Noise Cancellation Algorithm developed in C.",
+      ],
+    },
+    {
+      title: "12th Board",
+      institute: "Scholars Abode, Patna",
+      fromDate: "2012",
+      toDate: "2012",
+      score: "78.8%",
+      points: [],
+    },
+    {
+      title: "10th Board",
+      institute: "St. Paul's, Abu Road",
+      fromDate: "2010",
+      toDate: "2010",
+      score: "9 CGPA",
+      points: [],
     },
   ],
 };

@@ -70,11 +70,11 @@ function BioItem({
   icon,
   text,
   value,
-}: {
+}: Readonly<{
   icon: JSX.Element;
   text: string;
   value: string;
-}) {
+}>) {
   return (
     <div className="flex flex-row prose prose-lg print:prose-sm">
       <div className="flex flex-row w-32">
@@ -89,7 +89,7 @@ function BioItem({
 export default function About({
   about,
   bio,
-}: {
+}: Readonly<{
   about: string;
   bio: {
     dob: string;
@@ -97,12 +97,12 @@ export default function About({
     phone: string;
     address: string;
   };
-}) {
+}>) {
   function getAge(dateString: string) {
-    var today = new Date();
-    var birthDate = new Date(dateString);
-    var age = today.getFullYear() - birthDate.getFullYear();
-    var m = today.getMonth() - birthDate.getMonth();
+    const today = new Date();
+    const birthDate = new Date(dateString);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
       age--;
     }

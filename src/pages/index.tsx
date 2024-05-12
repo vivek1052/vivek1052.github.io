@@ -5,6 +5,7 @@ import TopCard from "@/components/topCard";
 import userData from "../userData";
 import Skills from "@/components/skills";
 import Experience from "@/components/experience";
+import Education from "@/components/education";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           <About about={userData.aboutMe} bio={userData.bio} />
           <Skills skills={userData.skills} />
           <Experience experiences={userData.experience} />
+          <Education educations={userData.education} />
         </div>
       </Body>
     </main>

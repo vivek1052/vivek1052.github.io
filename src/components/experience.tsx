@@ -20,7 +20,7 @@ function timeLineCard(experience: {
                 <div className="flex flex-col sm:flex-row justify-between">
                     <h5 className="font-semibold">
                         {experience.title} <span className="font-thin">at</span>{" "}
-                        <span className="font-light">{experience.company}</span>
+                        {experience.company}
                     </h5>
                     <p className="!my-0 font-light">
                         {experience.fromDate} to {experience.toDate}
@@ -42,7 +42,7 @@ function timeLineCard(experience: {
 
 export default function Experience({
     experiences,
-}: {
+}: Readonly<{
     experiences: {
         title: string;
         company: string;
@@ -51,9 +51,9 @@ export default function Experience({
         toDate: string;
         points: string[];
     }[];
-}) {
+}>) {
     return (
-        <Card className="print:break-inside-avoid">
+        <Card>
             <Title>Experience</Title>
             <div className="prose prose-lg max-w-none  print:prose-sm">
                 {experiences.map((experience) => {

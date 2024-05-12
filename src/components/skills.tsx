@@ -8,7 +8,7 @@ const starIconOutLined = (
     viewBox="0 0 24 24"
     strokeWidth={1.5}
     stroke="currentColor"
-    className="w-5 h-5"
+    className="print:w-3 print:h-3 w-4 h-4"
   >
     <path
       strokeLinecap="round"
@@ -23,7 +23,7 @@ const starIconFilled = (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     fill="currentColor"
-    className="w-5 h-5"
+    className="print:w-3 print:h-3 w-4 h-4"
   >
     <path
       fillRule="evenodd"
@@ -37,7 +37,7 @@ function Profeciency(level: number) {
   const filledStars = level;
   const emptyStars = 5 - level;
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row items-center">
       {[...Array(filledStars)].map(() => {
         return starIconFilled;
       })}
@@ -48,20 +48,20 @@ function Profeciency(level: number) {
   );
 }
 
-function SkillSet(skillSet: {
+function SkillSet(skillSet: Readonly<{
   title: string;
   items: {
     name: string;
     level: number;
   }[];
-}) {
+}>) {
   return (
     <div className="prose print:break-inside-avoid print:prose-sm">
       <h4>{skillSet.title}</h4>
       <ul>
-        {skillSet.items.map((item) => {
+        {skillSet.items.map((item, i) => {
           return (
-            <li>
+            <li key={i} className="print:text-xs">
               <div className="flex flex-row justify-between">
                 {item.name}
                 {Profeciency(item.level)}
@@ -76,7 +76,7 @@ function SkillSet(skillSet: {
 
 export default function Skills({
   skills,
-}: {
+}: Readonly<{
   skills: {
     title: string;
     items: {
@@ -84,11 +84,11 @@ export default function Skills({
       level: number;
     }[];
   }[];
-}) {
+}>) {
   return (
     <Card>
       <Title>Professional Skills</Title>
-      <div className="print:grid-cols-2 print:gap-5 grid  grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-10 ">
+      <div className="print:grid-cols-3 print:gap-x-5 print:gap-y-5 grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10 ">
         {skills.map((skill) => {
           return <SkillSet {...skill} />;
         })}
