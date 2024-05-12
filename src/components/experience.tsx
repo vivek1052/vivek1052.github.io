@@ -11,21 +11,21 @@ function timeLineCard(experience: {
     points: string[];
 }) {
     return (
-        <div className="flex flex-row print:break-inside-avoid">
-            <div className="hidden sm:flex sm:flex-col sm:gap-1">
-                <div className="border-4 border-slate-500  rounded-full w-5 h-5 mr-4 mt-2 print:mt-1"></div>
-                <div className="border-r-2 border-slate-500 w-0 ml-2  h-full" />
-            </div>
-            <div className="flex flex-col w-full">
-                <div className="flex flex-col sm:flex-row justify-between">
+
+        <div className="flex flex-col w-full print:break-inside-avoid">
+            <div className="flex flex-col sm:flex-row justify-between">
+                <div className="flex flex-row items-center">
+                    <div className="hidden sm:inline border-4 border-slate-500  rounded-full w-5 h-5 mr-4" />
                     <h5 className="font-semibold">
                         {experience.title} <span className="font-thin">at</span>{" "}
                         {experience.company}
                     </h5>
-                    <p className="!my-0 font-light">
-                        {experience.fromDate} to {experience.toDate}
-                    </p>
                 </div>
+                <p className="!my-0 font-light">
+                    {experience.fromDate} to {experience.toDate}
+                </p>
+            </div>
+            <div className="sm:border-l-2 border-slate-500 sm:ml-2 sm:pl-7">
                 <div className="flex flex-row gap-2">
                     <p className="!my-0 font-light">{experience.location}</p>
                     {locationIcon}
@@ -36,7 +36,8 @@ function timeLineCard(experience: {
                     })}
                 </ul>
             </div>
-        </div>
+        </div >
+
     );
 }
 
