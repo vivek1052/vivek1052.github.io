@@ -1,5 +1,5 @@
 import Card from "./card";
-import InfoSection from "./infoSection";
+import Title from "./title";
 
 const starIconOutLined = (
   <svg
@@ -56,7 +56,7 @@ function SkillSet(skillSet: {
   }[];
 }) {
   return (
-    <div className="prose print:break-inside-avoid">
+    <div className="prose print:break-inside-avoid print:prose-sm">
       <h4>{skillSet.title}</h4>
       <ul>
         {skillSet.items.map((item) => {
@@ -87,7 +87,7 @@ export default function Skills({
 }) {
   return (
     <Card>
-      <InfoSection title="Professional Skills" />
+      <Title>Professional Skills</Title>
       <div className="print:grid-cols-2 print:gap-5 grid  grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-10 ">
         {skills.map((skill) => {
           return <SkillSet {...skill} />;

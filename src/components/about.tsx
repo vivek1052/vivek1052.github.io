@@ -1,5 +1,5 @@
 import Card from "./card";
-import InfoSection from "./infoSection";
+import Title from "./title";
 
 const emailIcon = (
   <svg
@@ -75,7 +75,7 @@ function BioItem({
   value: string;
 }) {
   return (
-    <div className="flex flex-row prose prose-lg">
+    <div className="flex flex-row prose prose-lg print:prose-sm">
       <div className="flex flex-row w-32">
         {icon}
         <h5>{text}</h5>
@@ -100,16 +100,18 @@ export default function About({
   return (
     <Card>
       <div className="grid grid-flow-row gap-10 lg:grid-flow-col lg:grid-col-2 lg:gap-20 print:gap-5">
-        <InfoSection title="About Me">
-          <p className="prose prose-lg">{about}</p>
-        </InfoSection>
+        <div>
+          <Title>About Me</Title>
+          <p className="prose prose-lg print:prose-sm max-w-none">{about}</p>
+        </div>
 
-        <InfoSection title="Bio">
+        <div>
+          <Title>Bio</Title>
           <BioItem icon={calendarIcon} text="Age" value={`${bio.age} yrs`} />
           <BioItem icon={emailIcon} text="Email" value={bio.email} />
           <BioItem icon={phoneIcon} text="Phone" value={bio.phone} />
           <BioItem icon={locationIcon} text="Address" value={bio.address} />
-        </InfoSection>
+        </div>
       </div>
     </Card>
   );
