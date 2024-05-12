@@ -1,9 +1,10 @@
 interface UserData {
   name: string;
   title: string;
+  subtitle: string;
   aboutMe: string;
   bio: {
-    age: number;
+    dob: string;
     email: string;
     phone: string;
     address: string;
@@ -20,13 +21,14 @@ interface UserData {
 const userData: UserData = {
   name: "Vivek Parashar",
   title: "Fullstack Native Software Engineer",
+  subtitle: "MERN Stack | Azure Certified | Shell-SAP-Deloitte",
   aboutMe:
     "I am a Fullstack Native Software Engineer with 8 years of experience, ranging from building ERPs to cloud native softwares.Being part of Product based, Service based and Captive companies, I have acquired a wide range of skillset and experience.",
   bio: {
-    age: 29,
+    dob: "26-Apr-1995",
     email: "vivekparashar811@gmail.com",
     phone: "+91-9884916300",
-    address: "Bluella Apt., Chinnapanahalli, Bengaluru-560073",
+    address: "Bengaluru-560073",
   },
   skills: [
     {
@@ -67,6 +69,20 @@ const userData: UserData = {
         { name: "GraphQL", level: 3 },
         { name: "gRPC", level: 2 },
       ],
+    },
+    {
+      title: "Databases/ORMs/ODMs",
+      items: [
+        { name: "MongoDB", level: 5 },
+        { name: "Mongoose", level: 5 },
+        { name: "PostgreSQL", level: 4 },
+        { name: "TypeORM", level: 4 },
+        { name: "Redis", level: 3 },
+      ],
+    },
+    {
+      title: "Cloud Platforms",
+      items: [{ name: "Azure(Certified)", level: 4 }],
     },
   ],
 };

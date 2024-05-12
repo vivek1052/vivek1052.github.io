@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Card from "./card";
 import Title from "./title";
 
@@ -91,12 +92,23 @@ export default function About({
 }: {
   about: string;
   bio: {
-    age: number;
+    dob: string;
     email: string;
     phone: string;
     address: string;
   };
 }) {
+  function getAge(dateString: string) {
+    var today = new Date();
+    var birthDate = new Date(dateString);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    return age;
+  }
+
   return (
     <Card>
       <div className="grid grid-flow-row gap-10 lg:grid-flow-col lg:grid-col-2 lg:gap-20 print:gap-5">
@@ -107,10 +119,16 @@ export default function About({
 
         <div>
           <Title>Bio</Title>
-          <BioItem icon={calendarIcon} text="Age" value={`${bio.age} yrs`} />
-          <BioItem icon={emailIcon} text="Email" value={bio.email} />
-          <BioItem icon={phoneIcon} text="Phone" value={bio.phone} />
-          <BioItem icon={locationIcon} text="Address" value={bio.address} />
+          <div className="print:grid print:grid-cols-2">
+            <BioItem
+              icon={calendarIcon}
+              text="Age"
+              value={`${getAge(bio.dob)} yrs`}
+            />
+            <BioItem icon={emailIcon} text="Email" value={bio.email} />
+            <BioItem icon={phoneIcon} text="Phone" value={bio.phone} />
+            <BioItem icon={locationIcon} text="Address" value={bio.address} />
+          </div>
         </div>
       </div>
     </Card>

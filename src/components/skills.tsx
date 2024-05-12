@@ -88,7 +88,7 @@ export default function Skills({
   return (
     <Card>
       <Title>Professional Skills</Title>
-      <div className="print:grid-cols-2 print:gap-5 grid  grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-10 ">
+      <div className="print:grid-cols-2 print:gap-5 grid  grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-7 ">
         {skills.map((skill) => {
           return <SkillSet {...skill} />;
         })}

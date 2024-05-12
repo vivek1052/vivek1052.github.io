@@ -3,9 +3,11 @@ import Card from "./card";
 export default function TopCard({
   name,
   title,
+  subtitle,
 }: {
   name: string;
   title: string;
+  subtitle: string;
 }) {
   return (
     <Card className="!p-0 !relative">
@@ -22,8 +24,11 @@ export default function TopCard({
         />
 
         <div className="print:py-0 mx-auto text-center py-2">
-          <h2 className="text-4xl font-extrabold text-white mb-5">{name}</h2>
+          <h2 className="text-4xl font-extrabold text-white mb-5 print:text-slate-400">
+            {name}
+          </h2>
           <h5 className="text-xl font-normal text-slate-300">{title}</h5>
+          <h5 className="text-xl font-normal text-slate-300">{subtitle}</h5>
         </div>
       </div>
     </Card>
