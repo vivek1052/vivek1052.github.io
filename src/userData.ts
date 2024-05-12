@@ -16,6 +16,14 @@ interface UserData {
       level: number;
     }[];
   }[];
+  experience: {
+    title: string;
+    company: string;
+    location: string;
+    fromDate: string;
+    toDate: string;
+    points: string[];
+  }[];
 }
 
 const userData: UserData = {
@@ -23,7 +31,7 @@ const userData: UserData = {
   title: "Fullstack Native Software Engineer",
   subtitle: "MERN Stack | Azure Certified | Shell-SAP-Deloitte",
   aboutMe:
-    "I am a Fullstack Native Software Engineer with 8 years of experience, ranging from building ERPs to cloud native softwares.Being part of Product based, Service based and Captive companies, I have acquired a wide range of skillset and experience.",
+    "I am a Fullstack Native Software Engineer with 8 years of experience, ranging from building ERPs to cloud native softwares. Being part of Product based, Service based and Captive companies, I have acquired a wide range of skillset and experience.",
   bio: {
     dob: "26-Apr-1995",
     email: "vivekparashar811@gmail.com",
@@ -83,6 +91,69 @@ const userData: UserData = {
     {
       title: "Cloud Platforms",
       items: [{ name: "Azure(Certified)", level: 4 }],
+    },
+  ],
+  experience: [
+    {
+      title: "Software Engineer",
+      company: "Shell India Pvt Ltd",
+      location: "Bengaluru",
+      fromDate: "Feb 2023",
+      toDate: "Present",
+      points: [
+        "Developed and maintained Blockchain based book and claim platform for Sustainable Aviation Fuel, Avelia. Project used React, NestJS, MongoDB, etherjs and was deployed on AKS using Github Actions.",
+        "Redesigned the existing architecture to use asyncronous messaging bus communication instead of REST to improve throughput.",
+        "Developed RBAC module inorder to make the platform multi-tenant/multi-persona.",
+        "Contributed to open source and inhouse capability building by developing various libraries such as Odata filter parser and Azure Service Bus wrapper for Nestjs.",
+      ],
+    },
+    {
+      title: "Developer",
+      company: "SAP Labs",
+      location: "Bengaluru",
+      fromDate: "Apr 2022",
+      toDate: "Feb 2023",
+      points: [
+        `Designed and developed features for a SaaS ERP Business ByDesign. Gained experience about large scale framework designs and efficient use of design patterns.`,
+        `Proposed a solution for 'Pay per Use' model using SAP IOT and SAP Subscription services as part of Industrial IOT challenge. This solution created billing in SAP Subscription services based on usage of a crane mounted on a shipping vessel.`,
+        `Designed and developed Planned Landed Cost and Landed Cost feature for SRM in Business Bydesign.`,
+      ],
+    },
+    {
+      title: "Associate Developer",
+      company: "SAP Labs",
+      location: "Bengaluru",
+      fromDate: "May 2020",
+      toDate: "May 2022",
+      points: [
+        `Gained experience about containerized applications with CI/CD pipeline.`,
+        `Worked on product migration from ABAP to Nodejs based framework running in a containerized environment using Docker/Kubernetes.`,
+        `Worked on design and development of Invoice Scanning feature using ML to scan physical/digital invoices and create a copy in ByDesign.`,
+        `New features design and development on existing cloud based ERP, Business ByDesign, in SRM area.`,
+      ],
+    },
+    {
+      title: "Consultant",
+      company: "Deloitte Consulting USI",
+      location: "Bengaluru",
+      fromDate: "Sep 2019",
+      toDate: "Apr 2020",
+      points: [
+        `Worked on SD, FI & CRM projects using ABAP, UI5, SAP Gateway and OData for Caterpillar.`,
+        `Developed UI5 Fiori app used by the traffic team to monitor Transport Units.`,
+        `Was responsible for gathering Business requirements, Development and testing of RICEFW objects acting as Techno-Functional resource.`,
+      ],
+    },
+    {
+      title: "Business Technology Analyst",
+      company: "Deloitte Consulting USI",
+      location: "Bengaluru",
+      fromDate: "Aug 2016",
+      toDate: "Aug 2019",
+      points: [
+        `Acted as fullstack developer working with CRM ABAP and UI5 for Konica Minolta.`,
+        `Acted as ABAP developer for West Pharmaceuticals. Carried out performance improvement for BOM explosion report.`,
+      ],
     },
   ],
 };
