@@ -1,5 +1,3 @@
-import Card from "./card";
-import Title from "./title";
 
 const starIconOutLined = (
   <svg
@@ -8,7 +6,7 @@ const starIconOutLined = (
     viewBox="0 0 24 24"
     strokeWidth={1.5}
     stroke="currentColor"
-    className="print:w-3 print:h-3 w-4 h-4"
+    className="icon print:w-3 print:h-3"
   >
     <path
       strokeLinecap="round"
@@ -23,7 +21,7 @@ const starIconFilled = (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     fill="currentColor"
-    className="print:w-3 print:h-3 w-4 h-4"
+    className="icon print:w-3 print:h-3"
   >
     <path
       fillRule="evenodd"
@@ -56,12 +54,12 @@ function SkillSet(skillSet: Readonly<{
   }[];
 }>) {
   return (
-    <div className="prose print:break-inside-avoid print:prose-sm">
-      <h4>{skillSet.title}</h4>
-      <ul>
+    <div className="print:break-inside-avoid">
+      <div className="card-text-semibold">{skillSet.title}</div>
+      <ul className="list">
         {skillSet.items.map((item, i) => {
           return (
-            <li key={i} className="print:text-xs">
+            <li key={i} className="list-item">
               <div className="flex flex-row justify-between">
                 {item.name}
                 {Profeciency(item.level)}
@@ -86,13 +84,13 @@ export default function Skills({
   }[];
 }>) {
   return (
-    <Card>
-      <Title>Professional Skills</Title>
-      <div className="print:grid-cols-3 print:gap-x-5 print:gap-y-5 grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10 ">
+    <div className="card">
+      <div className="card-title">Professional Skills</div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 gap-5 md:gap-10 print:gap-5">
         {skills.map((skill) => {
           return <SkillSet {...skill} />;
         })}
       </div>
-    </Card>
+    </div>
   );
 }

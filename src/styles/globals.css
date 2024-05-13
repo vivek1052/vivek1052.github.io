@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .body {
+    @apply max-w-[1280px] mx-auto;
+  }
+
+  .card {
+    @apply print:shadow-none print:border-none print:p-0 w-full shadow-lg border-2 p-10;
+  }
+
+  .card-title {
+    @apply font-thin text-slate-800 text-4xl mb-5 print:mb-2 print:text-2xl;
+  }
+
+  .card-text {
+    @apply text-slate-700 text-lg leading-relaxed tracking-wide print:text-sm print:tracking-normal;
+  }
+
+  .card-text-light {
+    @apply card-text font-light;
+  }
+
+  .card-text-semibold {
+    @apply card-text font-semibold;
+  }
+
+  .icon {
+    @apply w-5 h-5 print:w-4 print:h-4;
+  }
+
+  .circle-icon {
+    @apply hidden sm:inline border-4 border-slate-500  rounded-full w-5 h-5 mr-4;
+  }
+
+  .list {
+    @apply my-6 list-disc print:my-3;
+  }
+
+  .list-item {
+    @apply card-text my-2 ml-4 print:my-1;
+  }
+}

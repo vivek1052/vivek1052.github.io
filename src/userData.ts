@@ -32,6 +32,12 @@ interface UserData {
     score: string;
     points: string[];
   }[];
+  projects: {
+    title: string;
+    description: string;
+    techStack: string;
+    github: string;
+  }[];
 }
 
 const userData: UserData = {
@@ -192,6 +198,15 @@ const userData: UserData = {
       toDate: "2010",
       score: "9 CGPA",
       points: [],
+    },
+  ],
+  projects: [
+    {
+      title: "Azure Service Bus Wrapper for NestJS",
+      description:
+        "This is a wrapper library which provides modules for Azure Service Bus package. It allows to create Queues/Controllers using decorators just as Nestjs. Connections are pooled and reused preventing duplicate connections being made to same resource.",
+      techStack: "Typescript, Azure Service Bus, NestJS",
+      github: "https://github.com/vivek1052/azure-service-bus-nestjs-wrapper",
     },
   ],
 };

@@ -1,5 +1,3 @@
-import Card from "./card";
-
 export default function TopCard({
   name,
   title,
@@ -10,7 +8,7 @@ export default function TopCard({
   subtitle: string;
 }) {
   return (
-    <Card className="!p-0 !relative">
+    <div className="card !p-0 !relative">
       <img
         src="/header-background.jpg"
         alt=""
@@ -31,6 +29,6 @@ export default function TopCard({
           <h5 className="text-xl font-normal text-slate-300">{subtitle}</h5>
         </div>
       </div>
-    </Card>
+    </div>
   );
 }

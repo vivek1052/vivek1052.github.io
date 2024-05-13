@@ -1,6 +1,3 @@
-import { useState } from "react";
-import Card from "./card";
-import Title from "./title";
 
 const emailIcon = (
   <svg
@@ -9,7 +6,7 @@ const emailIcon = (
     viewBox="0 0 24 24"
     strokeWidth={1.5}
     stroke="currentColor"
-    className="w-5 mr-2"
+    className="icon mr-2"
   >
     <path
       strokeLinecap="round"
@@ -19,14 +16,14 @@ const emailIcon = (
   </svg>
 );
 
-const calendarIcon = (
+export const calendarIcon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
     stroke-width="1.5"
     stroke="currentColor"
-    className="w-5 mr-2"
+    className="icon mr-2"
   >
     <path
       stroke-linecap="round"
@@ -41,7 +38,7 @@ const phoneIcon = (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 20 20"
     fill="currentColor"
-    className="w-5 mr-2"
+    className="icon mr-2"
   >
     <path
       fillRule="evenodd"
@@ -76,12 +73,12 @@ function BioItem({
   value: string;
 }>) {
   return (
-    <div className="flex flex-row prose prose-lg print:prose-sm">
-      <div className="flex flex-row w-32">
+    <div className="flex flex-row items-center">
+      <div className="flex flex-row w-32 items-center">
         {icon}
-        <h5>{text}</h5>
+        <div className="card-text">{text}</div>
       </div>
-      <h5>{value}</h5>
+      <div className="card-text">{value}</div>
     </div>
   );
 }
@@ -110,16 +107,16 @@ export default function About({
   }
 
   return (
-    <Card>
+    <div className="card">
       <div className="grid grid-flow-row gap-10 lg:grid-flow-col lg:grid-col-2 lg:gap-20 print:gap-5">
         <div>
-          <Title>About Me</Title>
-          <p className="prose prose-lg print:prose-sm max-w-none">{about}</p>
+          <div className="card-title">About Me</div>
+          <div className="card-text">{about}</div>
         </div>
 
         <div>
-          <Title>Bio</Title>
-          <div className="print:grid print:grid-cols-2">
+          <div className="card-title">Bio</div>
+          <div className="grid grid-cols-1 gap-2 print:grid-cols-2  print:gap-0">
             <BioItem
               icon={calendarIcon}
               text="Age"
@@ -131,6 +128,6 @@ export default function About({
           </div>
         </div>
       </div>
-    </Card>
+    </div>
   );
 }

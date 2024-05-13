@@ -1,8 +1,7 @@
-import { locationIcon } from "./about";
-import Card from "./card";
-import Title from "./title";
+import { calendarIcon, locationIcon } from "./about";
 
-function timeLineCard(experience: {
+
+function TimeLineCard(experience: {
     title: string;
     company: string;
     location: string;
@@ -15,24 +14,27 @@ function timeLineCard(experience: {
         <div className="flex flex-col w-full print:break-inside-avoid">
             <div className="flex flex-col sm:flex-row justify-between">
                 <div className="flex flex-row items-center">
-                    <div className="hidden sm:inline border-4 border-slate-500  rounded-full w-5 h-5 mr-4" />
-                    <h5 className="font-semibold">
+                    <div className="circle-icon" />
+                    <div className="card-text-semibold">
                         {experience.title} <span className="font-thin">at</span>{" "}
                         {experience.company}
-                    </h5>
+                    </div>
                 </div>
-                <p className="!my-0 font-light">
-                    {experience.fromDate} to {experience.toDate}
-                </p>
+                <div className="flex flex-row items-center">
+                    {calendarIcon}
+                    <div className="card-text-light">
+                        {experience.fromDate} to {experience.toDate}
+                    </div>
+                </div>
             </div>
             <div className="sm:border-l-2 border-slate-500 sm:ml-2 sm:pl-7">
-                <div className="flex flex-row gap-2">
-                    <p className="!my-0 font-light">{experience.location}</p>
+                <div className="flex flex-row items-center">
                     {locationIcon}
+                    <div className="card-text-light">{experience.location}</div>
                 </div>
-                <ul className="print:my-2">
+                <ul className="list">
                     {experience.points.map((point, index) => {
-                        return <li key={index} className="print:text-sm">{point}</li>;
+                        return <li key={index} className="list-item">{point}</li>;
                     })}
                 </ul>
             </div>
@@ -54,13 +56,11 @@ export default function Experience({
     }[];
 }>) {
     return (
-        <Card>
-            <Title>Experience</Title>
-            <div className="prose prose-lg max-w-none  print:prose-sm">
-                {experiences.map((experience) => {
-                    return timeLineCard(experience);
-                })}
-            </div>
-        </Card>
+        <div className="card">
+            <div className="card-title">Experience</div>
+            {experiences.map((experience) => {
+                return TimeLineCard(experience);
+            })}
+        </div>
     );
 }
