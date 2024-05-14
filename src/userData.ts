@@ -38,6 +38,12 @@ interface UserData {
     techStack: string;
     github: string;
   }[];
+  certifications: {
+    title: string;
+    issuer: string;
+    issuedDate: string;
+    validationLink: string;
+  }[];
 }
 
 const userData: UserData = {
@@ -56,7 +62,7 @@ const userData: UserData = {
     {
       title: "Backend Frameworks",
       items: [
-        { name: "NodeJS", level: 5 },
+        { name: "NodeJS/Typescript", level: 5 },
         { name: "ExpressJS", level: 5 },
         { name: "NestJS", level: 5 },
         { name: "SAP Capire", level: 4 },
@@ -207,6 +213,49 @@ const userData: UserData = {
         "This is a wrapper library which provides modules for Azure Service Bus package. It allows to create Queues/Controllers using decorators just as Nestjs. Connections are pooled and reused preventing duplicate connections being made to same resource.",
       techStack: "Typescript, Azure Service Bus, NestJS",
       github: "https://github.com/vivek1052/azure-service-bus-nestjs-wrapper",
+    },
+    {
+      title: "Odata Filter Parser",
+      description:
+        "This is a database agnostic library which can be used to parse Odata $filter to a database specific query. Currently it supports MongoDB and SQL.",
+      techStack: "Typescript",
+      github: "https://github.com/vivek1052/odata-filter-parser",
+    },
+    {
+      title: "Darpan",
+      description:
+        "A Photo gallery/manager app written in SAP CAPIRE and Vuejs which can be self hosted as a docker container.",
+      techStack: "SAP CAPIRE, CAP CDS, Vuejs, Docker",
+      github: "https://github.com/vivek1052/Darpan",
+    },
+  ],
+  certifications: [
+    {
+      title: "Microsoft Certified: Azure Fundamentals",
+      issuer: "Microsoft",
+      issuedDate: "Mar 2023",
+      validationLink:
+        "https://www.credly.com/badges/aa9c3ec7-8e5d-4e0f-bd37-19fb382603f8/linked_in_profile",
+    },
+    {
+      title: "Software Developer Boot Camp",
+      issuer: "Construx Software",
+      issuedDate: "Aug 2023",
+      validationLink: "www.construx.com",
+    },
+    {
+      title: "LFC131: Green Software for Practitioners",
+      issuer: "Linux Foundation",
+      issuedDate: "Mar 2024",
+      validationLink:
+        "https://www.credly.com/earner/earned/badge/92e3361f-275d-44db-9bfd-1c926ea53289",
+    },
+    {
+      title: "Open SAP UI5",
+      issuer: "SAP",
+      issuedDate: "Jan 2020",
+      validationLink:
+        "https://open.sap.com/verify/xepem-hitep-zotig-lubez-duvob",
     },
   ],
 };
