@@ -1,4 +1,4 @@
-import CardLineItem from "./CardlineItem";
+import CardLineItem from "./cardlineItem";
 import { locationIcon, calendarIcon } from "./icons";
 
 const ExperienceTimeline = (experience: {

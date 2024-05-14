@@ -1,4 +1,4 @@
-import CardLineItem from "./CardlineItem";
+import CardLineItem from "./cardlineItem";
 import { calendarIcon, instituteIcon, linkIcon } from "./icons";
 
 const CertificationTimeline = (certification: {
@@ -31,21 +31,21 @@ const CertificationTimeline = (certification: {
 
 export default function Certification({
   certifications,
-}: {
+}: Readonly<{
   certifications: {
     title: string;
     issuer: string;
     issuedDate: string;
     validationLink: string;
   }[];
-}) {
+}>) {
   return (
     <div className="card">
       <div className="card-title">Certification</div>
       <ul className="list">
-        {certifications.map((certification) => {
+        {certifications.map((certification, i) => {
           return (
-            <li className="list-item my-6 print:my-2">
+            <li key={i} className="list-item my-6 print:my-2">
               {CertificationTimeline(certification)}
             </li>
           );

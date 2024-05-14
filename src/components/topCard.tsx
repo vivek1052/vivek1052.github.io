@@ -2,11 +2,11 @@ export default function TopCard({
   name,
   title,
   subtitle,
-}: {
+}: Readonly<{
   name: string;
   title: string;
   subtitle: string;
-}) {
+}>) {
   return (
     <div className="card !p-0 !relative">
       <img

@@ -8,7 +8,7 @@ export default function CardLineItem({
   line2Icon,
   line2,
   body,
-}: {
+}: Readonly<{
   timeline: boolean;
   heading: ReactElement;
   subHeadingIcon: ReactElement;
@@ -16,7 +16,7 @@ export default function CardLineItem({
   line2Icon: ReactElement;
   line2: ReactElement;
   body: ReactElement;
-}) {
+}>) {
   return (
     <div className="flex flex-col print:break-inside-avoid">
       <div className="flex flex-col lg:flex-row print:flex-row justify-between">

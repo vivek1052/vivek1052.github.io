@@ -1,4 +1,4 @@
-import CardLineItem from "./CardlineItem";
+import CardLineItem from "./cardlineItem";
 import { calendarIcon, trophyIcon } from "./icons";
 
 const EducationTimeLine = (education: {

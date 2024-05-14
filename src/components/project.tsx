@@ -1,4 +1,4 @@
-import CardLineItem from "./CardlineItem";
+import CardLineItem from "./cardlineItem";
 import { linkIcon, stackIcon } from "./icons";
 
 const ProjectTimeline = (project: {
@@ -24,21 +24,21 @@ const ProjectTimeline = (project: {
 
 export default function Project({
   projects,
-}: {
+}: Readonly<{
   projects: {
     title: string;
     description: string;
     techStack: string;
     github: string;
   }[];
-}) {
+}>) {
   return (
     <div className="card">
       <div className="card-title">Project</div>
       <ul className="list">
-        {projects.map((project) => {
+        {projects.map((project, i) => {
           return (
-            <li className="list-item my-6 print:my-2">
+            <li key={i} className="list-item my-6 print:my-2">
               {ProjectTimeline(project)}
             </li>
           );
