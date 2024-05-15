@@ -48,10 +48,10 @@ interface UserData {
 
 const userData: UserData = {
   name: "Vivek Parashar",
-  title: "Fullstack Native Software Engineer",
+  title: "Full-stack Native Software Engineer",
   subtitle: "MERN Stack | Azure Certified | Shell-SAP-Deloitte",
   aboutMe:
-    "I am a Fullstack Native Software Engineer with 8 years of experience, ranging from building ERPs to cloud native softwares. Being part of Product based, Service based and Captive companies, I have acquired a wide range of skillset and experience.",
+    "I am a Javascript Full-stack Native Software Engineer with 8 years of experience, ranging from building ERPs to cloud native softwares. Being part of Product based, Service based and Captive companies, I have acquired a wide range of skillset and experience.",
   bio: {
     dob: "26-Apr-1995",
     email: "vivekparashar811@gmail.com",
@@ -171,7 +171,7 @@ const userData: UserData = {
       fromDate: "Aug 2016",
       toDate: "Aug 2019",
       points: [
-        `Acted as fullstack developer working with CRM ABAP and UI5 for Konica Minolta.`,
+        `Acted as full-stack developer working with CRM ABAP and UI5 for Konica Minolta.`,
         `Acted as ABAP developer for West Pharmaceuticals. Carried out performance improvement for BOM explosion report.`,
       ],
     },
