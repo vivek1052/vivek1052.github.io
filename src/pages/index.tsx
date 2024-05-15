@@ -7,6 +7,7 @@ import Experience from "@/components/experience";
 import Education from "@/components/education";
 import Project from "@/components/project";
 import Certification from "@/components/certification";
+import Award from "@/components/awards";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
           <Project projects={userData.projects} />
           <Education educations={userData.education} />
           <Certification certifications={userData.certifications} />
+          <Award awards={userData.awards} />
         </div>
       </div>
     </main>

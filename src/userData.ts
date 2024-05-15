@@ -8,6 +8,10 @@ interface UserData {
     email: string;
     phone: string;
     address: string;
+    githubHandle: string;
+    githubLink: string;
+    linkedinHandle: string;
+    linkedinLink: string;
   };
   skills: {
     title: string;
@@ -44,6 +48,12 @@ interface UserData {
     issuedDate: string;
     validationLink: string;
   }[];
+  awards: {
+    title: string;
+    issuer: string;
+    issuedDate: string;
+    description: string;
+  }[];
 }
 
 const userData: UserData = {
@@ -51,12 +61,16 @@ const userData: UserData = {
   title: "Full-stack Native Software Engineer",
   subtitle: "MERN Stack | Azure Certified | Shell-SAP-Deloitte",
   aboutMe:
-    "I am a Javascript Full-stack Native Software Engineer with 8 years of experience, ranging from building ERPs to cloud native softwares. Being part of Product based, Service based and Captive companies, I have acquired a wide range of skillset and experience.",
+    "I am a Javascript Full-stack Native Software Engineer with 8 years of experience, ranging from building ERPs to cloud native softwares. Being part of different sectors, I have acquired a wide range of skillset and domain expertise.",
   bio: {
     dob: "26-Apr-1995",
     email: "vivekparashar811@gmail.com",
     phone: "+91-9884916300",
     address: "Bengaluru-560073",
+    githubHandle: "vivek1052",
+    githubLink: "https://github.com/vivek1052",
+    linkedinHandle: "vivek-parashar-a525a469",
+    linkedinLink: "https://www.linkedin.com/in/vivek-parashar-a525a469/",
   },
   skills: [
     {
@@ -256,6 +270,49 @@ const userData: UserData = {
       issuedDate: "Jan 2020",
       validationLink:
         "https://open.sap.com/verify/xepem-hitep-zotig-lubez-duvob",
+    },
+  ],
+  awards: [
+    {
+      title: "Continuous Development & Improvement Award",
+      issuer: "Shell India Pvt Ltd",
+      issuedDate: "2023",
+      description:
+        "Awarded for revamping the Avelia platform service-service communication and retrofitting REST apis with querying/pagination capabilities.",
+    },
+    {
+      title: "Innersource Star",
+      issuer: "Shell India Pvt Ltd",
+      issuedDate: "2023",
+      description:
+        "Awarded for contributing to Innersource(Shell's reuse platform).",
+    },
+    {
+      title: "Take It Higher",
+      issuer: "SAP Labs SME Application Development",
+      issuedDate: "2021",
+      description:
+        "Received award for innovations of products, tools, processes. and constantly striving to improve things, for proposing new ideas.",
+    },
+    {
+      title: "Applause Award",
+      issuer: "Deloitte USI Consulting",
+      issuedDate: "2019",
+      description:
+        "Appreciated for outstanding performance for client Caterpillar.",
+    },
+    {
+      title: "Spot Award",
+      issuer: "Deloitte USI Consulting",
+      issuedDate: "2018",
+      description:
+        "Appreciated for contributing towards UI5 B2B Workbench tool.",
+    },
+    {
+      title: "Spot Award",
+      issuer: "Deloitte USI Consulting",
+      issuedDate: "2017",
+      description: "Appreciated for performance on West Pharma project.",
     },
   ],
 };

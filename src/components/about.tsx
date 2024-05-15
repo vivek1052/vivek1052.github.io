@@ -1,4 +1,12 @@
-import { calendarIcon, emailIcon, locationIcon, phoneIcon } from "./icons";
+import { ReactElement } from "react";
+import {
+  calendarIcon,
+  emailIcon,
+  githubIcon,
+  linkedInIcon,
+  locationIcon,
+  phoneIcon,
+} from "./icons";
 
 function BioItem({
   icon,
@@ -7,7 +15,7 @@ function BioItem({
 }: Readonly<{
   icon: JSX.Element;
   text: string;
-  value: string;
+  value: string | ReactElement;
 }>) {
   return (
     <div className="flex flex-row items-center">
@@ -30,6 +38,10 @@ export default function About({
     email: string;
     phone: string;
     address: string;
+    githubHandle: string;
+    githubLink: string;
+    linkedinHandle: string;
+    linkedinLink: string;
   };
 }>) {
   function getAge(dateString: string) {
@@ -62,6 +74,16 @@ export default function About({
             <BioItem icon={emailIcon} text="Email" value={bio.email} />
             <BioItem icon={phoneIcon} text="Phone" value={bio.phone} />
             <BioItem icon={locationIcon} text="Address" value={bio.address} />
+            <BioItem
+              icon={githubIcon}
+              text="Github"
+              value={<a href={bio.githubLink}>{bio.githubHandle}</a>}
+            />
+            <BioItem
+              icon={linkedInIcon}
+              text="Linkedin"
+              value={<a href={bio.linkedinLink}>{bio.linkedinHandle}</a>}
+            />
           </div>
         </div>
       </div>

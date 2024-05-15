@@ -57,7 +57,7 @@ export default function Skills({
   return (
     <div className="card">
       <div className="card-title">Professional Skills</div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 gap-5 md:gap-10 print:gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 gap-5 md:gap-10 print:gap-3">
         {skills.map((skill, i) => {
           return <SkillSet key={i} {...skill} />;
         })}

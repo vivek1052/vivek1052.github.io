@@ -10,21 +10,21 @@ const CertificationTimeline = (certification: {
   return (
     <CardLineItem
       timeline={false}
-      heading={<div>{certification.title}</div>}
+      heading={
+        <div>
+          {certification.title} <span className="font-thin">from </span>{" "}
+          {certification.issuer}
+        </div>
+      }
       subHeadingIcon={calendarIcon}
       subHeading={<div>{certification.issuedDate}</div>}
-      line2Icon={instituteIcon}
-      line2={<div>{certification.issuer}</div>}
-      body={
+      line2Icon={linkIcon}
+      line2={
         <a href={certification.validationLink}>
-          <div className="flex flex-row items-center">
-            {linkIcon}
-            <div className="card-text-light">
-              {certification.validationLink}
-            </div>
-          </div>
+          {certification.validationLink}
         </a>
       }
+      body={<div></div>}
     />
   );
 };
@@ -41,7 +41,7 @@ export default function Certification({
 }>) {
   return (
     <div className="card">
-      <div className="card-title">Certification</div>
+      <div className="card-title">Certifications</div>
       <ul className="list">
         {certifications.map((certification, i) => {
           return (
