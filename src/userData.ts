@@ -108,8 +108,8 @@ const userData: UserData = {
         { name: "REST+HATEOAS", level: 5 },
         { name: "Odata", level: 5 },
         { name: "Message Queues", level: 5 },
+        { name: "Pub Sub/Events", level: 3 },
         { name: "GraphQL", level: 3 },
-        { name: "gRPC", level: 2 },
       ],
     },
     {
@@ -123,8 +123,27 @@ const userData: UserData = {
       ],
     },
     {
+      title: "Authentication Protocols",
+      items: [
+        { name: "OIDC", level: 5 },
+        { name: "OAuth2", level: 5 },
+        { name: "JWT", level: 5 },
+        { name: "Session", level: 5 },
+        { name: "Basic Auth", level: 5 },
+      ],
+    },
+    {
+      title: "Architectures",
+      items: [
+        { name: "Microservices", level: 4 },
+        { name: "MVC", level: 4 },
+        { name: "Onion Architecture", level: 3 },
+        { name: "Monolith", level: 5 },
+      ],
+    },
+    {
       title: "Cloud Platforms",
-      items: [{ name: "Azure(Certified)", level: 4 }],
+      items: [{ name: "Azure(Certified)", level: 3 }],
     },
   ],
   experience: [
@@ -136,7 +155,7 @@ const userData: UserData = {
       toDate: "Present",
       points: [
         "Developed and maintained Blockchain based book and claim platform for Sustainable Aviation Fuel, Avelia. Project used React, NestJS, MongoDB, etherjs and was deployed on AKS using Github Actions.",
-        "Redesigned the existing architecture to use asyncronous messaging bus communication instead of REST to improve throughput.",
+        "Redesigned the existing architecture to use asyncronous messaging bus instead of REST for microservice to microservice communication which improved throughput.",
         "Developed RBAC module inorder to make the platform multi-tenant/multi-persona.",
         "Contributed to open source and inhouse capability building by developing various libraries such as Odata filter parser and Azure Service Bus wrapper for Nestjs.",
       ],
@@ -241,6 +260,13 @@ const userData: UserData = {
         "A Photo gallery/manager app written in SAP CAPIRE and Vuejs which can be self hosted as a docker container.",
       techStack: "SAP CAPIRE, CAP CDS, Vuejs, Docker",
       github: "https://github.com/vivek1052/Darpan",
+    },
+    {
+      title: "Portfolio",
+      description:
+        "Developer Portfolio website. This resume is generated using this project.",
+      techStack: "Next.js, Tailwindcss, Typescript",
+      github: "https://github.com/vivek1052/vivek1052.github.io",
     },
   ],
   certifications: [

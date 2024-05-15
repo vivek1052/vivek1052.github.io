@@ -65,7 +65,7 @@ export default function About({
 
         <div>
           <div className="card-title">Bio</div>
-          <div className="grid grid-cols-1 gap-2 print:grid-cols-2  print:gap-0">
+          <div className="grid grid-cols-1 gap-2 print:grid-cols-2  print:gap-2">
             <BioItem
               icon={calendarIcon}
               text="Age"

@@ -54,7 +54,7 @@ export default function Education({
   }[];
 }>) {
   return (
-    <div className="card">
+    <div className="card print:break-inside-avoid">
       <div className="card-title">Education</div>
       {educations.map((education) => {
         return EducationTimeLine(education);
