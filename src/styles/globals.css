@@ -5,6 +5,7 @@
 @layer components {
   .body {
     @apply max-w-[1280px] mx-auto;
+    -webkit-print-color-adjust: exact !important;
   }
 
   .card {
@@ -16,7 +17,7 @@
   }
 
   .card-text {
-    @apply text-slate-700 text-lg leading-relaxed tracking-wide print:text-xs print:tracking-normal;
+    @apply text-slate-700 text-lg leading-relaxed tracking-wide print:font-medium print:text-xs print:tracking-normal;
   }
 
   .card-text-light {

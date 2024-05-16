@@ -86,10 +86,10 @@ const userData: UserData = {
       title: "Frontend Frameworks",
       items: [
         { name: "ReactJS", level: 5 },
-        { name: "Tailwindcss/Bootstrap", level: 5 },
+        { name: "HTML5/CSS", level: 5 },
+        { name: "Tailwind/Bootstrap", level: 5 },
         { name: "SAP UI5", level: 4 },
-        { name: "Next.js", level: 3 },
-        { name: "Vue.js", level: 3 },
+        { name: "Next.js/Vue.js", level: 3 },
       ],
     },
     {
@@ -123,7 +123,7 @@ const userData: UserData = {
       ],
     },
     {
-      title: "Authentication Protocols",
+      title: "Auth Protocols",
       items: [
         { name: "OIDC", level: 5 },
         { name: "OAuth2", level: 5 },

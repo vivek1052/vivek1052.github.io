@@ -8,6 +8,7 @@ import Education from "@/components/education";
 import Project from "@/components/project";
 import Certification from "@/components/certification";
 import Award from "@/components/awards";
+import Bio from "@/components/bio";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
             subtitle={userData.subtitle}
           />
           <About about={userData.aboutMe} bio={userData.bio} />
+          <Bio bio={userData.bio} />
           <Skills skills={userData.skills} />
           <Experience experiences={userData.experience} />
           <Project projects={userData.projects} />
