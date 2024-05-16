@@ -15,11 +15,12 @@ export default function Home() {
     <main>
       <div className="body">
         <Header />
-        <div className="grid grid-flow-row gap-5 pb-5 sm:gap-10 sm:pb-10 xl:gap-20 xl:pb-20 print:gap-5">
+        <div className="grid grid-flow-row gap-5 pb-5 sm:gap-10 sm:pb-10 xl:gap-20 xl:pb-20 print:gap-3">
           <TopCard
             name={userData.name}
             title={userData.title}
             subtitle={userData.subtitle}
+            bio={userData.bio}
           />
           <About about={userData.aboutMe} />
           <Bio bio={userData.bio} />

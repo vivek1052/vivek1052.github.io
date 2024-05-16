@@ -14,8 +14,8 @@ const ExperienceTimeline = (experience: {
       timeline={true}
       heading={
         <div>
-          {experience.title} <span className="font-thin">at</span>{" "}
-          {experience.company}
+          {experience.title.toUpperCase()} <span className="font-thin">at</span>{" "}
+          {experience.company.toUpperCase()}
         </div>
       }
       subHeadingIcon={calendarIcon}

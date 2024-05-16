@@ -37,7 +37,7 @@ export default function Award({
 }) {
   return (
     <div className="card">
-      <div className="card-title">Awards</div>
+      <div className="card-title">Awards & Recognition</div>
       <ul className="list">
         {awards.map((award, i) => {
           return (

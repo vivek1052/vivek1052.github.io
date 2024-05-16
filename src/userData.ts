@@ -58,10 +58,10 @@ interface UserData {
 
 const userData: UserData = {
   name: "Vivek Parashar",
-  title: "Full-stack Native Software Engineer",
+  title: "Full-Stack Native Software Engineer",
   subtitle: "MERN Stack | Azure Certified | Shell-SAP-Deloitte",
   aboutMe:
-    "I am a Javascript Full-stack Native Software Engineer with 8 years of experience, ranging from building ERPs to cloud native softwares. Being part of different sectors, I have acquired a wide range of skillset and domain expertise.",
+    "I am a Javascript Full Stack Native Software Engineer with 8 years of experience, ranging from building ERPs to cloud native softwares. Being part of different sectors, I have acquired a wide range of skillset and domain expertise.",
   bio: {
     dob: "26-Apr-1995",
     email: "vivekparashar811@gmail.com",
@@ -96,8 +96,8 @@ const userData: UserData = {
       title: "Infrastructure",
       items: [
         { name: "Docker", level: 5 },
-        { name: "Kubernetes", level: 3 },
         { name: "Docker-compose", level: 5 },
+        { name: "Kubernetes", level: 3 },
         { name: "Github Actions", level: 3 },
         { name: "Terraforms", level: 2 },
       ],
@@ -135,10 +135,10 @@ const userData: UserData = {
     {
       title: "Architectures",
       items: [
+        { name: "Monolith", level: 5 },
         { name: "Microservices", level: 4 },
         { name: "MVC", level: 4 },
         { name: "Onion Architecture", level: 3 },
-        { name: "Monolith", level: 5 },
       ],
     },
     {
@@ -155,7 +155,7 @@ const userData: UserData = {
       toDate: "Present",
       points: [
         "Developed and maintained Blockchain based book and claim platform for Sustainable Aviation Fuel, Avelia. Project used React, NestJS, MongoDB, etherjs and was deployed on AKS using Github Actions.",
-        "Redesigned the existing architecture to use asyncronous messaging bus instead of REST for microservice to microservice communication which improved throughput.",
+        "Redesigned the existing architecture to use asyncronous messaging bus instead of REST for microservice to microservice communication which improved throughput. Increased volume handling from 5 to 40 million gallons.ß",
         "Developed RBAC module inorder to make the platform multi-tenant/multi-persona.",
         "Contributed to open source and inhouse capability building by developing various libraries such as Odata filter parser and Azure Service Bus wrapper for Nestjs.",
       ],

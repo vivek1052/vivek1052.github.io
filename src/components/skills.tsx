@@ -16,7 +16,7 @@ function SkillSet(
             <li key={i} className="list-item">
               <div className="relative w-full  whitespace-nowrap indent-2 print:indent-1 z-0">
                 <div
-                  className="absolute overflow-hidden z-10 bg-slate-600 text-slate-50 "
+                  className="absolute overflow-hidden z-10 bg-slate-600 text-slate-50"
                   style={{ width: `${item.level * 20}%` }}
                 >
                   {item.name}

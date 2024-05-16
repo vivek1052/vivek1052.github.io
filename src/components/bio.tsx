@@ -41,7 +41,7 @@ function BioItem({
 
 export default function Bio({
   bio,
-}: {
+}: Readonly<{
   bio: {
     dob: string;
     email: string;
@@ -52,9 +52,9 @@ export default function Bio({
     linkedinHandle: string;
     linkedinLink: string;
   };
-}) {
+}>) {
   return (
-    <div className="card">
+    <div className="card print:hidden">
       <div className="card-title">Bio</div>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 print:grid-cols-2 gap-2   print:gap-2">
         <BioItem

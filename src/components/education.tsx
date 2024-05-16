@@ -14,8 +14,9 @@ const EducationTimeLine = (education: {
       timeline={true}
       heading={
         <div>
-          {education.title} <span className="font-thin">from</span>{" "}
-          {education.institute}
+          {education.title.toUpperCase()}{" "}
+          <span className="font-thin">from</span>{" "}
+          {education.institute.toUpperCase()}
         </div>
       }
       subHeadingIcon={calendarIcon}
