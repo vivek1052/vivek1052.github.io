@@ -21,7 +21,7 @@ export default function Home() {
             title={userData.title}
             subtitle={userData.subtitle}
           />
-          <About about={userData.aboutMe} bio={userData.bio} />
+          <About about={userData.aboutMe} />
           <Bio bio={userData.bio} />
           <Skills skills={userData.skills} />
           <Experience experiences={userData.experience} />
