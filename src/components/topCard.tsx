@@ -1,3 +1,4 @@
+import { ReactElement } from "react";
 import Contact from "./contact";
 import {
   emailIcon,
@@ -21,10 +22,11 @@ export default function TopCard({
     email: string;
     phone: string;
     address: string;
-    githubHandle: string;
-    githubLink: string;
-    linkedinHandle: string;
-    linkedinLink: string;
+    webPresence: {
+      handle: string;
+      link: string;
+      icon: ReactElement;
+    }[];
   };
 }>) {
   return (
