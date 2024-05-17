@@ -1,5 +1,5 @@
 import CardLineItem from "./cardlineItem";
-import { calendarIcon, instituteIcon } from "./icons";
+import { calendarIcon } from "./icons";
 
 const AwardTimeline = (award: {
   title: string;

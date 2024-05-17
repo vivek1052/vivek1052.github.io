@@ -1,5 +1,5 @@
 import CardLineItem from "./cardlineItem";
-import { calendarIcon, instituteIcon, linkIcon } from "./icons";
+import { calendarIcon, linkIcon } from "./icons";
 
 const CertificationTimeline = (certification: {
   title: string;

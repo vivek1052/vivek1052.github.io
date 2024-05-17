@@ -1,3 +1,6 @@
+import { ReactElement } from "react";
+import { githubIcon, linkedInIcon, mediumIcon } from "./components/icons";
+
 interface UserData {
   name: string;
   title: string;
@@ -8,10 +11,11 @@ interface UserData {
     email: string;
     phone: string;
     address: string;
-    githubHandle: string;
-    githubLink: string;
-    linkedinHandle: string;
-    linkedinLink: string;
+    webPresence: {
+      handle: string;
+      link: string;
+      icon: ReactElement;
+    }[];
   };
   skills: {
     title: string;
@@ -54,6 +58,12 @@ interface UserData {
     issuedDate: string;
     description: string;
   }[];
+  articles: {
+    title: string;
+    link: string;
+    date: string;
+  }[];
+  hobbies: string[];
 }
 
 const userData: UserData = {
@@ -67,10 +77,23 @@ const userData: UserData = {
     email: "vivekparashar811@gmail.com",
     phone: "+91-9884916300",
     address: "Bengaluru-560073",
-    githubHandle: "vivek1052",
-    githubLink: "https://github.com/vivek1052",
-    linkedinHandle: "vivek-parashar-a525a469",
-    linkedinLink: "https://www.linkedin.com/in/vivek-parashar-a525a469/",
+    webPresence: [
+      {
+        handle: "vivek1052",
+        link: "https://github.com/vivek1052",
+        icon: githubIcon,
+      },
+      {
+        handle: "vivek-parashar-a525a469",
+        link: "https://www.linkedin.com/in/vivek-parashar-a525a469/",
+        icon: linkedInIcon,
+      },
+      {
+        handle: "vivekparashar811",
+        link: "https://medium.com/@vivekparashar811",
+        icon: mediumIcon,
+      },
+    ],
   },
   skills: [
     {
@@ -155,7 +178,7 @@ const userData: UserData = {
       toDate: "Present",
       points: [
         "Developed and maintained Blockchain based book and claim platform for Sustainable Aviation Fuel, Avelia. Project used React, NestJS, MongoDB, etherjs and was deployed on AKS using Github Actions.",
-        "Redesigned the existing architecture to use asyncronous messaging bus instead of REST for microservice to microservice communication which improved throughput. Increased volume handling from 5 to 40 million gallons.ß",
+        "Redesigned the existing architecture to use asyncronous messaging bus instead of REST for microservice to microservice communication which improved throughput. Increased volume handling from 5 to 40 million gallons.",
         "Developed RBAC module inorder to make the platform multi-tenant/multi-persona.",
         "Contributed to open source and inhouse capability building by developing various libraries such as Odata filter parser and Azure Service Bus wrapper for Nestjs.",
       ],
@@ -341,6 +364,14 @@ const userData: UserData = {
       description: "Appreciated for performance on West Pharma project.",
     },
   ],
+  articles: [
+    {
+      title: "Azure Service Bus with Nestjs Decorators?",
+      link: "https://medium.com/@vivekparashar811/azure-service-bus-with-nestjs-decorators-0a2dd2d36942",
+      date: "Nov 2023",
+    },
+  ],
+  hobbies: ["Selfhosting Home Server", "Home Automation", "DIY Audio"],
 };
 
 export default userData;

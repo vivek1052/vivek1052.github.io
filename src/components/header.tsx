@@ -19,14 +19,22 @@ export default function Header() {
         <a href="#education">
           <div className="card-text-light">Education</div>
         </a>
-      </div>
-      <div className="flex flex-row justify-center gap-4">
+
         <a href="#certification">
           <div className="card-text-light">Certifications</div>
         </a>
-
+      </div>
+      <div className="flex flex-row justify-center gap-4">
         <a href="#award">
           <div className="card-text-light">Awards</div>
+        </a>
+
+        <a href="#articles">
+          <div className="card-text-light">Articles</div>
+        </a>
+
+        <a href="#hobbies">
+          <div className="card-text-light">Hobbies</div>
         </a>
 
         <a href="#contact">

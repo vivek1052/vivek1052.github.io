@@ -17,7 +17,7 @@
   }
 
   .card-text {
-    @apply text-slate-700 text-lg leading-relaxed tracking-wide print:font-medium print:text-xs print:tracking-normal;
+    @apply text-slate-700 text-lg leading-relaxed tracking-wide print:font-medium print:text-xs;
   }
 
   .card-text-light {

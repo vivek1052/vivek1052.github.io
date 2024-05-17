@@ -9,13 +9,15 @@ import Project from "@/components/project";
 import Certification from "@/components/certification";
 import Award from "@/components/awards";
 import Contact from "@/components/contact";
+import Hobbies from "@/components/hobbies";
+import Articles from "@/components/articles";
 
 export default function Home() {
   return (
     <main>
       <div className="body">
         <Header />
-        <div className="grid grid-flow-row gap-5 pb-5 sm:gap-10 sm:pb-10 xl:gap-20 xl:pb-20 print:gap-3">
+        <div className="grid grid-flow-row gap-5 sm:gap-10 xl:gap-20 print:gap-3">
           <TopCard
             name={userData.name}
             title={userData.title}
@@ -29,9 +31,11 @@ export default function Home() {
           <Education educations={userData.education} />
           <Certification certifications={userData.certifications} />
           <Award awards={userData.awards} />
-          <div id="contact" className="print:hidden my-10">
-            <Contact bio={userData.bio} />
-          </div>
+          <Articles articles={userData.articles} />
+          <Hobbies hobbies={userData.hobbies} />
+        </div>
+        <div id="contact" className="print:hidden my-10">
+          <Contact bio={userData.bio} />
         </div>
       </div>
     </main>

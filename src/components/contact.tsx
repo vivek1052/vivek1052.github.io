@@ -1,8 +1,10 @@
+import { ReactElement } from "react";
 import {
   emailIcon,
   githubIcon,
   linkedInIcon,
   locationIcon,
+  mediumIcon,
   phoneIcon,
 } from "./icons";
 
@@ -17,20 +19,21 @@ const ContactItem = ({ icon, text }: { icon: JSX.Element; text: string }) => {
 
 export default function Contact({
   bio,
-}: {
+}: Readonly<{
   bio: {
     dob: string;
     email: string;
     phone: string;
     address: string;
-    githubHandle: string;
-    githubLink: string;
-    linkedinHandle: string;
-    linkedinLink: string;
+    webPresence: {
+      handle: string;
+      link: string;
+      icon: ReactElement;
+    }[];
   };
-}) {
+}>) {
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-center">
+    <div className="flex flex-col justify-center items-center">
       <div className="flex flex-row justify-center items-center">
         <ContactItem icon={phoneIcon} text={bio.phone} />
         <div className="dot-icon" />
@@ -38,15 +41,15 @@ export default function Contact({
         <div className="dot-icon" />
         <ContactItem icon={locationIcon} text={bio.address} />
       </div>
-      <div className="dot-icon hidden lg:inline" />
-      <div className="flex flex-row justify-center items-center">
-        <a href={bio.githubLink}>
-          <ContactItem icon={githubIcon} text={bio.githubHandle} />
-        </a>
-        <div className="dot-icon" />
-        <a href={bio.linkedinLink}>
-          <ContactItem icon={linkedInIcon} text={bio.linkedinHandle} />
-        </a>
+      <div className="flex flex-row justify-center mt-2">
+        {bio.webPresence.map((web, i) => {
+          return (
+            <a key={i} href={web.link} className="flex flex-row items-center">
+              <ContactItem icon={web.icon} text={web.handle} />
+              {i < bio.webPresence.length - 1 && <div className="dot-icon" />}
+            </a>
+          );
+        })}
       </div>
     </div>
   );

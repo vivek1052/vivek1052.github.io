@@ -9,7 +9,7 @@ function SkillSet(
 ) {
   return (
     <div className="print:break-inside-avoid">
-      <div className="card-text-semibold">{skillSet.title}</div>
+      <div className="card-text-semibold">{skillSet.title.toUpperCase()}</div>
       <ul className="list">
         {skillSet.items.map((item, i) => {
           return (
