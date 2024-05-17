@@ -27,16 +27,16 @@ const AwardTimeline = (award: {
 
 export default function Award({
   awards,
-}: {
+}: Readonly<{
   awards: {
     title: string;
     issuer: string;
     issuedDate: string;
     description: string;
   }[];
-}) {
+}>) {
   return (
-    <div className="card">
+    <div id="award" className="card">
       <div className="card-title">Awards & Recognition</div>
       <ul className="list">
         {awards.map((award, i) => {

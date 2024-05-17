@@ -54,7 +54,7 @@ export default function Experience({
   }[];
 }>) {
   return (
-    <div className="card">
+    <div id="experience" className="card">
       <div className="card-title">Experience</div>
       {experiences.map((experience) => {
         return ExperienceTimeline(experience);

@@ -9,6 +9,7 @@ import Project from "@/components/project";
 import Certification from "@/components/certification";
 import Award from "@/components/awards";
 import Bio from "@/components/bio";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
@@ -23,13 +24,15 @@ export default function Home() {
             bio={userData.bio}
           />
           <About about={userData.aboutMe} />
-          <Bio bio={userData.bio} />
           <Skills skills={userData.skills} />
           <Experience experiences={userData.experience} />
           <Project projects={userData.projects} />
           <Education educations={userData.education} />
           <Certification certifications={userData.certifications} />
           <Award awards={userData.awards} />
+          <div id="contact" className="print:hidden my-10">
+            <Contact bio={userData.bio} />
+          </div>
         </div>
       </div>
     </main>

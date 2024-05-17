@@ -40,7 +40,7 @@ export default function Certification({
   }[];
 }>) {
   return (
-    <div className="card">
+    <div id="certification" className="card">
       <div className="card-title">Certifications</div>
       <ul className="list">
         {certifications.map((certification, i) => {

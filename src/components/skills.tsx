@@ -45,7 +45,7 @@ export default function Skills({
   }[];
 }>) {
   return (
-    <div className="card">
+    <div id="skills" className="card">
       <div className="card-title">Professional Skills</div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 print:grid-cols-4 gap-5 md:gap-10 print:gap-3">
         {skills.map((skill, i) => {

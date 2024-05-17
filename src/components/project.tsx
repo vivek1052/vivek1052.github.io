@@ -33,7 +33,7 @@ export default function Project({
   }[];
 }>) {
   return (
-    <div className="card">
+    <div id="project" className="card">
       <div className="card-title">Projects</div>
       <ul className="list">
         {projects.map((project, i) => {
