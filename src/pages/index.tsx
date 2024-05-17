@@ -8,7 +8,6 @@ import Education from "@/components/education";
 import Project from "@/components/project";
 import Certification from "@/components/certification";
 import Award from "@/components/awards";
-import Bio from "@/components/bio";
 import Contact from "@/components/contact";
 
 export default function Home() {
