@@ -47,4 +47,8 @@
   .list-item {
     @apply card-text my-2 ml-4 print:my-1;
   }
+
+  .bar-separator {
+    @apply xl:hidden border-b-2 mx-10;
+  }
 }

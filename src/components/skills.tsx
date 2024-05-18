@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from "react";
+
 function SkillSet(
   skillSet: Readonly<{
     title: string;
@@ -7,19 +9,40 @@ function SkillSet(
     }[];
   }>
 ) {
+  const listRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      });
+    });
+
+    listRef.current && observer.observe(listRef.current);
+  }, [listRef]);
+
   return (
     <div className="print:break-inside-avoid">
       <div className="card-text-semibold">{skillSet.title.toUpperCase()}</div>
-      <ul className="list">
+      <ul className="list" ref={listRef}>
         {skillSet.items.map((item, i) => {
           return (
             <li key={i} className="list-item">
               <div className="relative w-full  whitespace-nowrap indent-2 print:indent-1 z-0">
                 <div
-                  className="absolute overflow-hidden z-10 bg-slate-600 text-slate-50"
+                  className="absolute overflow-hidden z-10 bg-transparent"
                   style={{ width: `${item.level * 20}%` }}
                 >
-                  {item.name}
+                  <div
+                    className={`overflow-hidden w-full bg-slate-600 text-slate-50 ${
+                      isVisible && "animate-bar"
+                    }`}
+                  >
+                    {item.name}
+                  </div>
                 </div>
                 <div className="absolute overflow-hidden  w-full bg-slate-200">
                   {item.name}
