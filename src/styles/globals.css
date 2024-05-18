@@ -52,3 +52,8 @@
     @apply xl:hidden print:hidden border-b-2 mx-10;
   }
 }
+
+@page {
+  size: A4;
+  margin: auto;
+}
