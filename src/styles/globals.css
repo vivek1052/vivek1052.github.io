@@ -9,11 +9,11 @@
   }
 
   .card {
-    @apply print:shadow-none print:border-none print:p-0 w-full shadow-lg border-2 p-10;
+    @apply print:shadow-none print:border-none print:p-0 xl:shadow-lg xl:border-2 w-full p-10;
   }
 
   .card-title {
-    @apply font-thin text-slate-800 text-4xl mb-5 print:mb-2 print:text-2xl print:font-light print:border-b-2 print:border-slate-700 print:break-after-avoid;
+    @apply font-thin tracking-[0.2em] text-slate-800 text-4xl mb-5 print:mb-2 print:text-2xl print:font-light print:border-b-2 print:border-slate-700 print:break-after-avoid;
   }
 
   .card-text {
@@ -25,7 +25,7 @@
   }
 
   .card-text-semibold {
-    @apply card-text font-semibold;
+    @apply card-text font-semibold tracking-wider;
   }
 
   .icon {

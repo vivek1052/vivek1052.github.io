@@ -1,12 +1,5 @@
 import { ReactElement } from "react";
 import Contact from "./contact";
-import {
-  emailIcon,
-  githubIcon,
-  linkedInIcon,
-  locationIcon,
-  phoneIcon,
-} from "./icons";
 
 export default function TopCard({
   name,
@@ -44,13 +37,13 @@ export default function TopCard({
         />
 
         <div className="print:py-0 mx-auto text-center py-2">
-          <div className="text-4xl font-extrabold print:font-light tracking-widest text-white mb-5 print:text-slate-600 print:mb-3">
+          <div className="text-4xl font-light tracking-[0.2em] text-white mb-5 print:text-slate-600 print:mb-3">
             {name.toUpperCase()}
           </div>
-          <div className="text-xl font-normal text-slate-300 print:text-slate-500">
+          <div className="text-xl font-normal tracking-wide sm:tracking-widest text-slate-300 print:text-slate-500">
             {title}
           </div>
-          <div className="text-xl font-normal text-slate-300  print:text-slate-500">
+          <div className="text-xl font-normal tracking-wide sm:tracking-widest text-slate-300  print:text-slate-500">
             {subtitle}
           </div>
           <div className="hidden print:block mt-5">
