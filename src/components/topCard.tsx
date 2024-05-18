@@ -33,11 +33,11 @@ export default function TopCard({
         <img
           src="/avatar.png"
           alt=""
-          className="print:hidden border-4 rounded-full w-80 mx-auto"
+          className="print:hidden border-4 rounded-full w-72 mx-auto"
         />
 
         <div className="print:py-0 mx-auto text-center py-2">
-          <div className="text-4xl font-light tracking-[0.2em] text-white mb-5 print:text-slate-600 print:mb-3">
+          <div className="text-4xl font-light tracking-[0.2em] text-white mb-5 print:text-slate-600 print:text-3xl print:mb-3">
             {name.toUpperCase()}
           </div>
           <div className="text-xl font-normal tracking-wide sm:tracking-widest text-slate-300 print:text-slate-500">
@@ -46,9 +46,17 @@ export default function TopCard({
           <div className="text-xl font-normal tracking-wide sm:tracking-widest text-slate-300  print:text-slate-500">
             {subtitle}
           </div>
-          <div className="hidden print:block mt-5">
+          <div className="hidden print:block mt-3 mb-5">
             <Contact bio={bio} />
           </div>
+          <button
+            className="print:hidden bg-cyan-400 px-4 py-2 mt-4 rounded-full card-text-light tracking-widest"
+            onClick={() => {
+              window.print();
+            }}
+          >
+            Download Resume
+          </button>
         </div>
       </div>
     </div>

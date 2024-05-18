@@ -49,6 +49,6 @@
   }
 
   .bar-separator {
-    @apply xl:hidden border-b-2 mx-10;
+    @apply xl:hidden print:hidden border-b-2 mx-10;
   }
 }

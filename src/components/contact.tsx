@@ -41,7 +41,7 @@ export default function Contact({
         <div className="dot-icon" />
         <ContactItem icon={locationIcon} text={bio.address} />
       </div>
-      <div className="flex flex-row justify-center mt-2">
+      <div className="flex flex-row justify-center mt-1">
         {bio.webPresence.map((web, i) => {
           return (
             <a key={i} href={web.link} className="flex flex-row items-center">
