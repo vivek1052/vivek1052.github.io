@@ -245,22 +245,6 @@ const userData: UserData = {
         "Worked on LMS Noise Cancellation Algorithm developed in C.",
       ],
     },
-    {
-      title: "12th Board",
-      institute: "Scholars Abode, Patna",
-      fromDate: "2012",
-      toDate: "2012",
-      score: "78.8%",
-      points: [],
-    },
-    {
-      title: "10th Board",
-      institute: "St. Paul's, Abu Road",
-      fromDate: "2010",
-      toDate: "2010",
-      score: "9 CGPA",
-      points: [],
-    },
   ],
   projects: [
     {
