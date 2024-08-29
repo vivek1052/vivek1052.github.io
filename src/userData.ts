@@ -68,7 +68,7 @@ interface UserData {
 
 const userData: UserData = {
   name: "Vivek Parashar",
-  title: "Full-Stack Native Software Engineer",
+  title: "Full-Stack Native Software Engineer | 8+ Years Exp.",
   subtitle: "MERN Stack | Azure Certified | Shell-SAP-Deloitte",
   aboutMe:
     "I am a Javascript Full Stack Native Software Engineer with 8 years of experience, ranging from building ERPs to cloud native softwares. Being part of different sectors, I have acquired a wide range of skillset and domain expertise.",

@@ -13,7 +13,7 @@
   }
 
   .card-title {
-    @apply font-thin tracking-[0.2em] text-slate-800 text-4xl mb-5 print:mb-2 print:text-2xl print:font-light print:border-b-2 print:text-black print:break-after-avoid;
+    @apply font-thin tracking-[0.2em] text-slate-800 text-4xl mb-5 print:mb-2 print:text-2xl print:font-light print:border-b-2 print:text-black print:border-black print:break-after-avoid;
   }
 
   .card-text {
