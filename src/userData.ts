@@ -301,6 +301,13 @@ const userData: UserData = {
         "https://www.credly.com/badges/aa9c3ec7-8e5d-4e0f-bd37-19fb382603f8/linked_in_profile",
     },
     {
+      title: "Certified In Cybersecurity",
+      issuer: "ISC2",
+      issuedDate: "Aug 2024",
+      validationLink:
+        "https://www.credly.com/badges/ffbfd08f-225c-435c-aac2-856c6e5c82b7/public_url",
+    },
+    {
       title: "Software Developer Boot Camp",
       issuer: "Construx Software",
       issuedDate: "Aug 2023",
