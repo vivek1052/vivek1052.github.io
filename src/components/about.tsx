@@ -4,7 +4,7 @@ export default function About({
   about: string;
 }>) {
   return (
-    <div id="about" className="card">
+    <div id="about" className="card print:hidden">
       <div className="card-title">About Me</div>
       <div className="card-text">{about}</div>
     </div>

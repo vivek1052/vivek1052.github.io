@@ -25,7 +25,7 @@ function SkillSet(
   }, [listRef]);
 
   return (
-    <div className="print:break-inside-avoid">
+    <div>
       <div className="card-text-semibold">{skillSet.title.toUpperCase()}</div>
       <ul className="list" ref={listRef}>
         {skillSet.items.map((item, i) => {
@@ -69,11 +69,27 @@ export default function Skills({
 }>) {
   return (
     <div id="skills" className="card">
-      <div className="card-title">Professional Skills</div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 print:grid-cols-4 gap-5 md:gap-10 print:gap-3">
+      <div className="card-title">Skills</div>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-10 print:gap-3 print:hidden">
         {skills.map((skill, i) => {
           return <SkillSet key={i} {...skill} />;
         })}
+      </div>
+      <div className="hidden print:block">
+        <ul className="list">
+          {skills.map((skill, i) => {
+            return (
+              <li key={i} className="list-item">
+                <div className=" flex flex-row gap-1">
+                  <div className="card-text-semibold">
+                    {`${skill.title.toUpperCase()}:`}
+                  </div>
+                  <div>{skill.items.map((item) => item.name).join(", ")}</div>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </div>
   );

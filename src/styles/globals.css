@@ -4,7 +4,7 @@
 
 @layer components {
   .body {
-    @apply max-w-[1280px] w-fit mx-auto;
+    @apply max-w-[1280px] w-fit mx-auto print:font-serif;
     -webkit-print-color-adjust: exact !important;
   }
 
@@ -13,11 +13,11 @@
   }
 
   .card-title {
-    @apply font-thin tracking-[0.2em] text-slate-800 text-4xl mb-5 print:mb-2 print:text-2xl print:font-light print:border-b-2 print:border-slate-700 print:break-after-avoid;
+    @apply font-thin tracking-[0.2em] text-slate-800 text-4xl mb-5 print:mb-2 print:text-2xl print:font-light print:border-b-2 print:text-black print:break-after-avoid;
   }
 
   .card-text {
-    @apply text-slate-700 text-lg leading-relaxed tracking-wide print:font-medium print:text-xs;
+    @apply text-slate-700 text-lg leading-relaxed tracking-wide print:font-medium print:text-xs print:text-black;
   }
 
   .card-text-light {
@@ -33,11 +33,11 @@
   }
 
   .circle-icon {
-    @apply hidden lg:inline print:inline border-4 border-slate-500  rounded-full w-5 h-5 mr-4;
+    @apply hidden lg:inline print:inline border-4 border-slate-500  rounded-full w-5 h-5 mr-4 print:border-black;
   }
 
   .dot-icon {
-    @apply border-2 border-slate-500  rounded-full w-1 h-1 mx-2;
+    @apply border-2 border-slate-500  rounded-full w-1 h-1 mx-2 print:border-black;
   }
 
   .list {
@@ -45,7 +45,7 @@
   }
 
   .list-item {
-    @apply card-text my-2 ml-4 print:my-1;
+    @apply card-text my-2 ml-4;
   }
 
   .bar-separator {

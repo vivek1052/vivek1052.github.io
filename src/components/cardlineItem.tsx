@@ -34,7 +34,7 @@ export default function CardLineItem({
       <div
         className={
           timeline
-            ? "lg:border-l-2 print:border-l-2 border-slate-500 lg:ml-2 print:ml-2 lg:pl-7 print:pl-7"
+            ? "lg:border-l-2 print:border-l-2 border-slate-500 lg:ml-2 print:ml-2 lg:pl-7 print:pl-7 print:border-black"
             : ""
         }
       >
