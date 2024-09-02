@@ -97,18 +97,18 @@ const userData: UserData = {
   },
   skills: [
     {
-      title: "Backend Frameworks",
+      title: "Back-end Frameworks",
       items: [
-        { name: "NodeJS/Typescript", level: 5 },
+        { name: "Node.js/Typescript", level: 5 },
         { name: "ExpressJS", level: 5 },
         { name: "NestJS", level: 5 },
         { name: "SAP Capire", level: 4 },
       ],
     },
     {
-      title: "Frontend Frameworks",
+      title: "Front-end Frameworks",
       items: [
-        { name: "ReactJS", level: 5 },
+        { name: "React", level: 5 },
         { name: "HTML5/CSS", level: 5 },
         { name: "Tailwind/Bootstrap", level: 5 },
         { name: "SAP UI5", level: 4 },
@@ -178,8 +178,8 @@ const userData: UserData = {
       toDate: "Present",
       points: [
         "Developed and maintained Blockchain based book and claim platform for Sustainable Aviation Fuel, Avelia. Project used React, NestJS, MongoDB, etherjs and was deployed on AKS using Github Actions.",
-        "Redesigned the existing architecture to use asyncronous messaging bus instead of REST for microservice to microservice communication which improved throughput. Increased volume handling from 5 to 49 million gallons, potentially reducing 450,000 tonnes of CO2 emissions.",
-        "Developed RBAC module inorder to make the platform multi-tenant/multi-persona.",
+        "Redesigned the existing architecture to use asyncronous messaging bus instead of REST for microservice to microservice communication which improved scalability and data integrity. Increased volume handling from 5 to 49 million gallons, potentially reducing 450,000 tonnes of CO2 emissions.",
+        "Developed RBAC module inorder to make the platform multi-tenant/multi-persona which enabled platform to unlock new market with 70% cost reduction",
         "Contributed to open source and inhouse capability building by developing various libraries such as Odata filter parser and Azure Service Bus wrapper for Nestjs.",
       ],
     },
