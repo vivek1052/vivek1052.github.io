@@ -178,9 +178,9 @@ const userData: UserData = {
       toDate: "Present",
       points: [
         "Developed and maintained Blockchain based book and claim platform for Sustainable Aviation Fuel, Avelia. Project used React, NestJS, MongoDB, etherjs and was deployed on AKS using Github Actions.",
-        "Redesigned the existing architecture to use asyncronous messaging bus instead of REST for microservice to microservice communication which improved scalability and data integrity. Increased volume handling from 5 to 49 million gallons, potentially reducing 450,000 tonnes of CO2 emissions.",
-        "Developed RBAC module inorder to make the platform multi-tenant/multi-persona which enabled platform to unlock new market with 70% cost reduction",
-        "Contributed to open source and inhouse capability building by developing various libraries such as Odata filter parser and Azure Service Bus wrapper for Nestjs.",
+        "Redesigned the existing architecture to use asynchronous messaging bus instead of REST for microservice to microservice communication which improved scalability and data integrity. Increased volume handling from 5 to 49 million gallons, potentially reducing 450,000 tonnes of CO2 emissions.",
+        "Developed RBAC module in order to make the platform multi-tenant/multi-persona which enabled platform to unlock new market with 70% cost reduction",
+        "Contributed to open source and in-house capability building by developing various libraries such as Odata filter parser and Azure Service Bus wrapper for Nestjs.",
       ],
     },
     {
@@ -250,7 +250,7 @@ const userData: UserData = {
     {
       title: "Azure Service Bus Wrapper for NestJS",
       description:
-        "This is a wrapper library which provides modules for Azure Service Bus package. It allows to create Queues/Controllers using decorators just as Nestjs. Connections are pooled and reused preventing duplicate connections being made to same resource.",
+        "This is a wrapper library which provides modules for Azure Service Bus package. It allows creating Queues/Controllers using decorators just as Nestjs. Connections are pooled and reused preventing duplicate connections being made to same resource.",
       techStack: "Typescript, Azure Service Bus, NestJS",
       github: "https://github.com/vivek1052/azure-service-bus-nestjs-wrapper",
     },
@@ -318,7 +318,7 @@ const userData: UserData = {
       issuer: "Shell India Pvt Ltd",
       issuedDate: "2023",
       description:
-        "Awarded for revamping the Avelia platform service-service communication and retrofitting REST apis with querying/pagination capabilities.",
+        "Awarded for revamping the Avelia platform service-service communication and retrofitting REST APIs with querying/pagination capabilities.",
     },
     {
       title: "Innersource Star",
@@ -332,7 +332,7 @@ const userData: UserData = {
       issuer: "SAP Labs SME Application Development",
       issuedDate: "2021",
       description:
-        "Received award for innovations of products, tools, processes. and constantly striving to improve things, for proposing new ideas.",
+        "Received award for innovations of products, tools, processes, and constantly striving to improve things, for proposing new ideas.",
     },
     {
       title: "Applause Award",
