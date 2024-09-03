@@ -125,7 +125,7 @@ const userData: UserData = {
         { name: "Kubernetes", level: 3 },
         { name: "Github Actions", level: 3 },
         { name: "Terraforms", level: 2 },
-        { name: "SonarQube/Whitesource/Mend", level: 2}
+        { name: "SonarQube/Mend", level: 2}
       ],
     },
     {
