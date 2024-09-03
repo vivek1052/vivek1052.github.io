@@ -103,6 +103,8 @@ const userData: UserData = {
         { name: "ExpressJS", level: 5 },
         { name: "NestJS", level: 5 },
         { name: "SAP Capire", level: 4 },
+        { name: "Mocha", level: 5},
+        { name: "Jest", level: 5}
       ],
     },
     {
@@ -123,6 +125,7 @@ const userData: UserData = {
         { name: "Kubernetes", level: 3 },
         { name: "Github Actions", level: 3 },
         { name: "Terraforms", level: 2 },
+        { name: "SonarQube/Whitesource/Mend", level: 2}
       ],
     },
     {
