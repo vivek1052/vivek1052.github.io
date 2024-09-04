@@ -97,18 +97,20 @@ const userData: UserData = {
   },
   skills: [
     {
-      title: "Backend Frameworks",
+      title: "Back-end Frameworks",
       items: [
-        { name: "NodeJS/Typescript", level: 5 },
+        { name: "Node.js/Typescript", level: 5 },
         { name: "ExpressJS", level: 5 },
         { name: "NestJS", level: 5 },
         { name: "SAP Capire", level: 4 },
+        { name: "Mocha/Jest", level: 5 },
+        { name: "Golang", level: 2 },
       ],
     },
     {
-      title: "Frontend Frameworks",
+      title: "Front-end Frameworks",
       items: [
-        { name: "ReactJS", level: 5 },
+        { name: "React", level: 5 },
         { name: "HTML5/CSS", level: 5 },
         { name: "Tailwind/Bootstrap", level: 5 },
         { name: "SAP UI5", level: 4 },
@@ -123,6 +125,7 @@ const userData: UserData = {
         { name: "Kubernetes", level: 3 },
         { name: "Github Actions", level: 3 },
         { name: "Terraforms", level: 2 },
+        { name: "SonarQube/Mend", level: 2 },
       ],
     },
     {
@@ -174,21 +177,21 @@ const userData: UserData = {
       title: "Software Engineer",
       company: "Shell India Pvt Ltd",
       location: "Bengaluru",
-      fromDate: "Feb 2023",
+      fromDate: "13th Feb, 2023",
       toDate: "Present",
       points: [
-        "Developed and maintained Blockchain based book and claim platform for Sustainable Aviation Fuel, Avelia. Project used React, NestJS, MongoDB, etherjs and was deployed on Azure Kubernetes Service using Github Actions.",
-        "Redesigned the existing architecture to use asyncronous messaging bus instead of REST for microservice to microservice communication which improved throughput. Increased volume handling from 5 to 49 million gallons, potentially reducing 450,000 tonnes of CO2 emissions.",
-        "Developed RBAC module inorder to make the platform multi-tenant/multi-persona.",
-        "Contributed to open source and inhouse capability building by developing various libraries such as Odata filter parser and Azure Service Bus wrapper for Nestjs.",
+        "Developed and maintained a blockchain-based book and claim platform for Sustainable Aviation Fuel, Avelia. The project used React, NestJS, MongoDB, ether.js, and was deployed on Azure Kubernetes Service using GitHub Actions.",
+        "Redesigned the existing architecture to use an asynchronous messaging bus instead of REST for microservice-to-microservice communication, which improved scalability and data integrity. Increased volume handling 10 times from 5 to 49 million gallons, potentially reducing 450,000 tonnes of CO2 emissions.",
+        "Developed RBAC module to make the platform multi-tenant/multi-persona, enabling the platform to unlock new markets with a 70% cost reduction.",
+        "Contributed to open source and in-house capability building by developing various libraries such as an OData filter parser and Azure Service Bus wrapper for NestJS.",
       ],
     },
     {
       title: "Developer",
       company: "SAP Labs",
       location: "Bengaluru",
-      fromDate: "Apr 2022",
-      toDate: "Feb 2023",
+      fromDate: "1st Apr, 2022",
+      toDate: "10th Feb, 2023",
       points: [
         `Pioneered a 'Pay per Use' solution using SAP IoT, SAP Subscription Billing and Edge Computing for Industrial IoT challenge. It created billing in SAP Subscription Billing service based on the usage of a crane mounted on a shipping vessel. Gained experience in provisioning and managing IoT sensor nodes.`,
         `Designed and developed Planned Landed Cost and Landed Cost feature for SRM in Business ByDesign.`,
@@ -198,10 +201,10 @@ const userData: UserData = {
       title: "Associate Developer",
       company: "SAP Labs",
       location: "Bengaluru",
-      fromDate: "May 2020",
-      toDate: "May 2022",
+      fromDate: "4th May, 2020",
+      toDate: "31st Mar, 2022",
       points: [
-        `Contributed towards migration of the SaaS ERP product, Business ByDesign, from ABAP to a Node.js-based framework running in a containerized environment using Docker and Kubernetes. Potentially reduced operational expenses by 30% by using cloud service providers such as Alicloud and GCC.`,
+        `Contributed towards migration of the SaaS ERP product, Business ByDesign, from ABAP to a Node.js-based framework running in a containerized environment using Docker and Kubernetes. Used PostgreSQL as database. Potentially reduced operational expenses by 30% by using cloud service providers such as Alicloud and GCP.`,
         `Worked on the design and development of the Invoice Scanning feature using ML to scan physical and digital invoices and create a copy in ByDesign. Reduced the time taken to create an invoice by 50%.`,
         `Gained experience deploying containerized applications using Jenkins CI/CD pipelines. Learned about design patterns and their use within enterprise-grade framework architecture.`,
       ],
@@ -210,18 +213,18 @@ const userData: UserData = {
       title: "Consultant",
       company: "Deloitte Consulting USI",
       location: "Bengaluru",
-      fromDate: "Sep 2019",
-      toDate: "Apr 2020",
+      fromDate: "1st Sep, 2019",
+      toDate: "30th Apr, 2020",
       points: [
-        `Acted as a full-stack developer for Caterpillar's Transport Unit Monitoring web application using OpenUI5 and OData (REST) APIs. Reduced the lead time for detecting issues in transport units by 30%.`,
+        `Acted as a full-stack developer for Caterpillar's Transport Unit Monitoring web application using OpenUI5 and OData(REST) APIs. Reduced the lead time for detecting issues in transport units by 30%.`,
       ],
     },
     {
       title: "Business Technology Analyst",
       company: "Deloitte Consulting USI",
       location: "Bengaluru",
-      fromDate: "Aug 2016",
-      toDate: "Aug 2019",
+      fromDate: "8th Aug, 2016",
+      toDate: "31st Aug, 2019",
       points: [
         `Engineered OData (REST) APIs using SAP Gateway and an SQL database to be consumed by Konica Minolta's E-commerce web application, which was developed using OpenUI5 (a JavaScript framework).`,
         `Designed and developed an IDOC monitoring and processing tool using OpenUI5 and OData services.`,
@@ -246,7 +249,7 @@ const userData: UserData = {
     {
       title: "Azure Service Bus Wrapper for NestJS",
       description:
-        "This is a wrapper library which provides modules for Azure Service Bus package. It allows to create Queues/Controllers using decorators just as Nestjs. Connections are pooled and reused preventing duplicate connections being made to same resource.",
+        "This is a wrapper library which provides modules for Azure Service Bus package. It allows creating Queues/Controllers using decorators just as Nestjs. Connections are pooled and reused preventing duplicate connections being made to same resource.",
       techStack: "Typescript, Azure Service Bus, NestJS",
       github: "https://github.com/vivek1052/azure-service-bus-nestjs-wrapper",
     },
@@ -314,7 +317,7 @@ const userData: UserData = {
       issuer: "Shell India Pvt Ltd",
       issuedDate: "2023",
       description:
-        "Awarded for revamping the Avelia platform service-service communication and retrofitting REST apis with querying/pagination capabilities.",
+        "Awarded for revamping the Avelia platform service-service communication and retrofitting REST APIs with querying/pagination capabilities.",
     },
     {
       title: "Innersource Star",
@@ -328,7 +331,7 @@ const userData: UserData = {
       issuer: "SAP Labs SME Application Development",
       issuedDate: "2021",
       description:
-        "Received award for innovations of products, tools, processes. and constantly striving to improve things, for proposing new ideas.",
+        "Received award for innovations of products, tools, processes, and constantly striving to improve things, for proposing new ideas.",
     },
     {
       title: "Applause Award",
