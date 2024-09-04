@@ -71,7 +71,7 @@ const userData: UserData = {
   title: "Full-Stack Native Software Engineer | 8+ Years Exp.",
   subtitle: "MERN Stack | Azure Certified | Shell-SAP-Deloitte",
   aboutMe:
-    "I am a Full Stack Cloud Native Software Engineer with 8 years of experience, ranging from building ERPs to distributed systems.",
+    "I am a full-stack Cloud Native Software Engineer with 8 years of experience, ranging from building ERPs to distributed systems.",
   bio: {
     dob: "26-Apr-1995",
     email: "vivekparashar811@gmail.com",
@@ -99,7 +99,7 @@ const userData: UserData = {
     {
       title: "Back-end",
       items: [
-        { name: "Typescript/JavaScript", level: 5 },
+        { name: "TypeScript/JavaScript", level: 5 },
         { name: "Node.js", level: 5 },
         { name: "NestJS", level: 5 },
         { name: "Express.js", level: 5 },
@@ -133,7 +133,7 @@ const userData: UserData = {
       title: "Transport Protocols",
       items: [
         { name: "REST+HATEOAS", level: 5 },
-        { name: "Odata", level: 5 },
+        { name: "OData", level: 5 },
         { name: "Message Queues", level: 5 },
         { name: "Azure Service Bus", level: 5 },
         { name: "Pub Sub/Events", level: 3 },
@@ -251,14 +251,14 @@ const userData: UserData = {
       title: "Azure Service Bus Wrapper for NestJS",
       description:
         "This is a wrapper library which provides modules for Azure Service Bus package. It allows creating Queues/Controllers using decorators just as Nestjs. Connections are pooled and reused preventing duplicate connections being made to same resource.",
-      techStack: "Typescript, Azure Service Bus, NestJS",
+      techStack: "TypeScript, Azure Service Bus, NestJS",
       github: "https://github.com/vivek1052/azure-service-bus-nestjs-wrapper",
     },
     {
-      title: "Odata Filter Parser",
+      title: "OData Filter Parser",
       description:
-        "This is a database agnostic library which can be used to parse Odata $filter to a database specific query. Currently it supports MongoDB and SQL.",
-      techStack: "Typescript",
+        "This is a database agnostic library which can be used to parse OData $filter to a database specific query. Currently it supports MongoDB and SQL.",
+      techStack: "TypeScript",
       github: "https://github.com/vivek1052/odata-filter-parser",
     },
     {
@@ -272,7 +272,7 @@ const userData: UserData = {
       title: "Portfolio",
       description:
         "Developer Portfolio website. This resume is generated using this project.",
-      techStack: "Next.js, Tailwindcss, Typescript",
+      techStack: "Next.js, Tailwindcss, TypeScript",
       github: "https://github.com/vivek1052/vivek1052.github.io",
     },
   ],
