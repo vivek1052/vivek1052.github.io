@@ -71,7 +71,7 @@ const userData: UserData = {
   title: "Full-Stack Native Software Engineer | 8+ Years Exp.",
   subtitle: "MERN Stack | Azure Certified | Shell-SAP-Deloitte",
   aboutMe:
-    "I am a JavaScript Full Stack Native Software Engineer with 8 years of experience, ranging from building ERPs to cloud native softwares. Being part of different sectors, I have acquired a wide range of skillset and domain expertise.",
+    "I am a Full Stack Cloud Native Software Engineer with 8 years of experience, ranging from building ERPs to distributed systems.",
   bio: {
     dob: "26-Apr-1995",
     email: "vivekparashar811@gmail.com",
@@ -97,23 +97,24 @@ const userData: UserData = {
   },
   skills: [
     {
-      title: "Back-end Frameworks",
+      title: "Back-end",
       items: [
-        { name: "Node.js/Typescript", level: 5 },
-        { name: "ExpressJS", level: 5 },
+        { name: "Typescript/JavaScript", level: 5 },
+        { name: "Node.js", level: 5 },
         { name: "NestJS", level: 5 },
+        { name: "Express.js", level: 5 },
         { name: "SAP Capire", level: 4 },
         { name: "Mocha/Jest", level: 5 },
         { name: "Golang", level: 2 },
       ],
     },
     {
-      title: "Front-end Frameworks",
+      title: "Front-end",
       items: [
         { name: "React", level: 5 },
         { name: "HTML5/CSS", level: 5 },
         { name: "Tailwind/Bootstrap", level: 5 },
-        { name: "SAP UI5", level: 4 },
+        { name: "OpenUI5", level: 4 },
         { name: "Next.js/Vue.js", level: 3 },
       ],
     },
@@ -134,6 +135,7 @@ const userData: UserData = {
         { name: "REST+HATEOAS", level: 5 },
         { name: "Odata", level: 5 },
         { name: "Message Queues", level: 5 },
+        { name: "Azure Service Bus", level: 5 },
         { name: "Pub Sub/Events", level: 3 },
         { name: "GraphQL", level: 3 },
       ],
@@ -181,8 +183,8 @@ const userData: UserData = {
       toDate: "Present",
       points: [
         "Developed and maintained a blockchain-based book and claim platform for Sustainable Aviation Fuel, Avelia. The project used React, NestJS, MongoDB, ether.js, and was deployed on Azure Kubernetes Service using GitHub Actions.",
-        "Redesigned the existing architecture to use an asynchronous messaging bus instead of REST for microservice-to-microservice communication, which improved scalability and data integrity. Increased volume handling 10 times from 5 to 49 million gallons, potentially reducing 450,000 tonnes of CO2 emissions.",
-        "Developed RBAC module to make the platform multi-tenant/multi-persona, enabling the platform to unlock new markets with a 70% cost reduction.",
+        "Redesigned the existing architecture to use an asynchronous messaging bus instead of REST APIs for microservice-to-microservice communication, which improved scalability and data integrity. Increased volume handling by 10 times from 5 to 49 million gallons, potentially reducing 450,000 tonnes of CO2 emissions.",
+        "Developed RBAC module to make the platform multi-tenant/multi-persona, enabling the platform to unlock new markets with a 70% cost and TTM reduction.",
         "Contributed to open source and in-house capability building by developing various libraries such as an OData filter parser and Azure Service Bus wrapper for NestJS.",
       ],
     },
@@ -194,7 +196,6 @@ const userData: UserData = {
       toDate: "10th Feb, 2023",
       points: [
         `Pioneered a 'Pay per Use' solution using SAP IoT, SAP Subscription Billing and Edge Computing for Industrial IoT challenge. It created billing in SAP Subscription Billing service based on the usage of a crane mounted on a shipping vessel. Gained experience in provisioning and managing IoT sensor nodes.`,
-        `Designed and developed Planned Landed Cost and Landed Cost feature for SRM in Business ByDesign.`,
       ],
     },
     {
@@ -233,7 +234,7 @@ const userData: UserData = {
   ],
   education: [
     {
-      title: "BTech in Electronics and Communications Engineering",
+      title: "BTech in Electronics and Comm. Engineering",
       institute: "VIT University",
       fromDate: "2012",
       toDate: "2016",
