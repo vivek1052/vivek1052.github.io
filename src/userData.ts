@@ -71,7 +71,7 @@ const userData: UserData = {
   title: "Full-Stack Native Software Engineer | 8+ Years Exp.",
   subtitle: "MERN Stack | Azure Certified | Shell-SAP-Deloitte",
   aboutMe:
-    "I am a Javascript Full Stack Native Software Engineer with 8 years of experience, ranging from building ERPs to cloud native softwares. Being part of different sectors, I have acquired a wide range of skillset and domain expertise.",
+    "I am a JavaScript Full Stack Native Software Engineer with 8 years of experience, ranging from building ERPs to cloud native softwares. Being part of different sectors, I have acquired a wide range of skillset and domain expertise.",
   bio: {
     dob: "26-Apr-1995",
     email: "vivekparashar811@gmail.com",
@@ -177,7 +177,7 @@ const userData: UserData = {
       fromDate: "Feb 2023",
       toDate: "Present",
       points: [
-        "Developed and maintained Blockchain based book and claim platform for Sustainable Aviation Fuel, Avelia. Project used React, NestJS, MongoDB, etherjs and was deployed on AKS using Github Actions.",
+        "Developed and maintained Blockchain based book and claim platform for Sustainable Aviation Fuel, Avelia. Project used React, NestJS, MongoDB, etherjs and was deployed on Azure Kubernetes Service using Github Actions.",
         "Redesigned the existing architecture to use asyncronous messaging bus instead of REST for microservice to microservice communication which improved throughput. Increased volume handling from 5 to 49 million gallons, potentially reducing 450,000 tonnes of CO2 emissions.",
         "Developed RBAC module inorder to make the platform multi-tenant/multi-persona.",
         "Contributed to open source and inhouse capability building by developing various libraries such as Odata filter parser and Azure Service Bus wrapper for Nestjs.",
@@ -190,9 +190,8 @@ const userData: UserData = {
       fromDate: "Apr 2022",
       toDate: "Feb 2023",
       points: [
-        `Designed and developed features for a SaaS ERP Business ByDesign. Gained experience about large scale framework designs and efficient use of design patterns.`,
-        `Proposed a solution for 'Pay per Use' model using SAP IOT and SAP Subscription services as part of Industrial IOT challenge. This solution created billing in SAP Subscription services based on usage of a crane mounted on a shipping vessel.`,
-        `Designed and developed Planned Landed Cost and Landed Cost feature for SRM in Business Bydesign.`,
+        `Pioneered a 'Pay per Use' solution using SAP IoT, SAP Subscription Billing and Edge Computing for Industrial IoT challenge. It created billing in SAP Subscription Billing service based on the usage of a crane mounted on a shipping vessel. Gained experience in provisioning and managing IoT sensor nodes.`,
+        `Designed and developed Planned Landed Cost and Landed Cost feature for SRM in Business ByDesign.`,
       ],
     },
     {
@@ -202,10 +201,9 @@ const userData: UserData = {
       fromDate: "May 2020",
       toDate: "May 2022",
       points: [
-        `Gained experience about containerized applications with CI/CD pipeline.`,
-        `Worked on product migration from ABAP to Nodejs based framework running in a containerized environment using Docker/Kubernetes.`,
-        `Worked on design and development of Invoice Scanning feature using ML to scan physical/digital invoices and create a copy in ByDesign.`,
-        `New features design and development on existing cloud based ERP, Business ByDesign, in SRM area.`,
+        `Contributed towards migration of the SaaS ERP product, Business ByDesign, from ABAP to a Node.js-based framework running in a containerized environment using Docker and Kubernetes. Potentially reduced operational expenses by 30% by using cloud service providers such as Alicloud and GCC.`,
+        `Worked on the design and development of the Invoice Scanning feature using ML to scan physical and digital invoices and create a copy in ByDesign. Reduced the time taken to create an invoice by 50%.`,
+        `Gained experience deploying containerized applications using Jenkins CI/CD pipelines. Learned about design patterns and their use within enterprise-grade framework architecture.`,
       ],
     },
     {
@@ -215,9 +213,7 @@ const userData: UserData = {
       fromDate: "Sep 2019",
       toDate: "Apr 2020",
       points: [
-        `Worked on SD, FI & CRM projects using ABAP, UI5, SAP Gateway and OData for Caterpillar.`,
-        `Developed UI5 Fiori app used by the traffic team to monitor Transport Units.`,
-        `Was responsible for gathering Business requirements, Development and testing of RICEFW objects acting as Techno-Functional resource.`,
+        `Acted as a full-stack developer for Caterpillar's Transport Unit Monitoring web application using OpenUI5 and OData (REST) APIs. Reduced the lead time for detecting issues in transport units by 30%.`,
       ],
     },
     {
@@ -227,8 +223,8 @@ const userData: UserData = {
       fromDate: "Aug 2016",
       toDate: "Aug 2019",
       points: [
-        `Acted as full-stack developer working with CRM ABAP and UI5 for Konica Minolta.`,
-        `Acted as ABAP developer for West Pharmaceuticals. Carried out performance improvement for BOM explosion report.`,
+        `Engineered OData (REST) APIs using SAP Gateway and an SQL database to be consumed by Konica Minolta's E-commerce web application, which was developed using OpenUI5 (a JavaScript framework).`,
+        `Designed and developed an IDOC monitoring and processing tool using OpenUI5 and OData services.`,
       ],
     },
   ],
@@ -240,9 +236,9 @@ const userData: UserData = {
       toDate: "2016",
       score: "9.01 CGPA",
       points: [
-        "Won Texas Instruments Analog Challenge along with Tech Events and multiple Best Project Awards.",
-        "Worked on IoT based Remote Surveillance Projects recognized by College.",
-        "Worked on LMS Noise Cancellation Algorithm developed in C.",
+        "Won the Texas Instruments Analog Challenge, participated in tech events, and received multiple Best Project Awards.",
+        "Worked on IoT-based remote surveillance project recognized by the college.",
+        "Developed an LMS noise cancellation algorithm in C.",
       ],
     },
   ],
