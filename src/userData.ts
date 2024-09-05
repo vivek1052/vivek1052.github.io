@@ -143,9 +143,9 @@ const userData: UserData = {
     {
       title: "Databases/ORMs/ODMs",
       items: [
-        { name: "MongoDB", level: 5 },
+        { name: "MongoDB/NoSQL", level: 5 },
         { name: "Mongoose", level: 5 },
-        { name: "PostgreSQL", level: 4 },
+        { name: "PostgreSQL/RDBMS", level: 4 },
         { name: "TypeORM", level: 4 },
         { name: "Redis", level: 3 },
       ],
