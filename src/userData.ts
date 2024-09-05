@@ -76,7 +76,7 @@ const userData: UserData = {
     dob: "26-Apr-1995",
     email: "vivekparashar811@gmail.com",
     phone: "+91-9884916300",
-    address: "Bengaluru-560073",
+    address: "Bengaluru-560037",
     webPresence: [
       {
         handle: "vivek1052",
@@ -99,7 +99,6 @@ const userData: UserData = {
     {
       title: "Back-end",
       items: [
-        { name: "TypeScript/JavaScript", level: 5 },
         { name: "Node.js", level: 5 },
         { name: "NestJS", level: 5 },
         { name: "Express.js", level: 5 },
@@ -111,6 +110,7 @@ const userData: UserData = {
     {
       title: "Front-end",
       items: [
+        { name: "TypeScript/JavaScript", level: 5 },
         { name: "React", level: 5 },
         { name: "HTML5/CSS", level: 5 },
         { name: "Tailwind/Bootstrap", level: 5 },
