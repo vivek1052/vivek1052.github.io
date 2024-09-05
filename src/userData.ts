@@ -182,8 +182,8 @@ const userData: UserData = {
       fromDate: "13th Feb, 2023",
       toDate: "Present",
       points: [
-        "Developed and maintained a blockchain-based book and claim platform for Sustainable Aviation Fuel, Avelia. The project used React, NestJS, MongoDB, ether.js, and was deployed on Azure Kubernetes Service using GitHub Actions.",
-        "Redesigned the existing architecture to use an asynchronous messaging bus instead of REST APIs for microservice-to-microservice communication, which improved scalability and data integrity. Increased volume handling by 10 times from 5 to 49 million gallons, potentially reducing 450,000 tonnes of CO2 emissions.",
+        "Developed and maintained a blockchain-based book and claim platform for Sustainable Aviation Fuel, Avelia. Used React, NestJS, MongoDB, ether.js, and was deployed on Azure Kubernetes Service using GitHub Actions.",
+        "Redesigned the existing architecture to use an asynchronous messaging bus instead of REST APIs for microservice-to-microservice communication, which improved scalability and data integrity. Increased volume handling by 10 times from 5 to 49 million gallons, potentially reducing 450,000 tCO2 emissions.",
         "Developed RBAC module to make the platform multi-tenant/multi-persona, enabling the platform to unlock new markets with a 70% cost and TTM reduction.",
         "Contributed to open source and in-house capability building by developing various libraries such as an OData filter parser and Azure Service Bus wrapper for NestJS.",
       ],
@@ -196,7 +196,7 @@ const userData: UserData = {
       toDate: "10th Feb, 2023",
       points: [
         `Pioneered a 'Pay per Use' solution using SAP IoT, SAP Subscription Billing and Edge Computing for Industrial IoT challenge. It created billing in SAP Subscription Billing service based on the usage of a crane mounted on a shipping vessel. Gained experience in provisioning and managing IoT sensor nodes.`,
-        `Worked on the design and development of the Invoice Scanning feature using machine learning to scan physical and digital invoices and create a copy in ByDesign. Reduced the time taken to create an invoice by 50%.`,
+        `Worked on the design and development of the Invoice Scanning feature using machine learning to scan physical/digital invoices and create a copy in ByDesign. Reduced the time taken to create an invoice by 50%.`,
       ],
     },
     {
@@ -206,7 +206,7 @@ const userData: UserData = {
       fromDate: "4th May, 2020",
       toDate: "31st Mar, 2022",
       points: [
-        `Contributed towards migration of the SaaS ERP product, Business ByDesign, from ABAP to a Node.js-based framework running in a containerized environment using Docker and Kubernetes. Used PostgreSQL as database. Potentially reduced operational expenses by 30% by using cloud service providers such as Alicloud and GCP.`,
+        `Contributed towards migration of the SaaS ERP product, Business ByDesign, from ABAP to a Node.js-based framework running in a containerized environment using Docker and Kubernetes. Used PostgreSQL as database. Potentially reduced OpEx by 30% by using cloud service providers such as Alicloud and GCP.`,
         `Worked on the development of a Kanban tool using SAP Capire (a cloud-native development framework), Node.js, and HANA database, which was deployed on SAP Cloud Foundry. Set up a data ingestion pipeline into SAP Analytics Cloud using REST API for reporting purposes.`,
         `Gained experience deploying containerized applications using Jenkins CI/CD pipelines. Learned about design patterns and their use within enterprise-grade framework architecture.`,
       ],
