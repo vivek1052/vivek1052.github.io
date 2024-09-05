@@ -196,6 +196,7 @@ const userData: UserData = {
       toDate: "10th Feb, 2023",
       points: [
         `Pioneered a 'Pay per Use' solution using SAP IoT, SAP Subscription Billing and Edge Computing for Industrial IoT challenge. It created billing in SAP Subscription Billing service based on the usage of a crane mounted on a shipping vessel. Gained experience in provisioning and managing IoT sensor nodes.`,
+        `Worked on the design and development of the Invoice Scanning feature using machine learning to scan physical and digital invoices and create a copy in ByDesign. Reduced the time taken to create an invoice by 50%.`,
       ],
     },
     {
@@ -206,7 +207,7 @@ const userData: UserData = {
       toDate: "31st Mar, 2022",
       points: [
         `Contributed towards migration of the SaaS ERP product, Business ByDesign, from ABAP to a Node.js-based framework running in a containerized environment using Docker and Kubernetes. Used PostgreSQL as database. Potentially reduced operational expenses by 30% by using cloud service providers such as Alicloud and GCP.`,
-        `Worked on the design and development of the Invoice Scanning feature using ML to scan physical and digital invoices and create a copy in ByDesign. Reduced the time taken to create an invoice by 50%.`,
+        `Worked on the development of a Kanban tool using SAP Capire (a cloud-native development framework), Node.js, and HANA database, which was deployed on SAP Cloud Foundry. Set up a data ingestion pipeline into SAP Analytics Cloud using REST API for reporting purposes.`,
         `Gained experience deploying containerized applications using Jenkins CI/CD pipelines. Learned about design patterns and their use within enterprise-grade framework architecture.`,
       ],
     },
