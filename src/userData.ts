@@ -103,7 +103,7 @@ const userData: UserData = {
         { name: "NestJS", level: 5 },
         { name: "Express.js", level: 5 },
         { name: "SAP Capire", level: 4 },
-        { name: "Mocha/Jest", level: 5 },
+        { name: "Mocha/Jest(Testing framework)", level: 5 },
         { name: "Golang", level: 2 },
       ],
     },
@@ -183,7 +183,7 @@ const userData: UserData = {
       toDate: "Present",
       points: [
        "Worked on technical design and development of a blockchain-based book and claim platform for Sustainable Aviation Fuel, Avelia. Used React, NestJS, MongoDB, ether.js, and was deployed on Azure Kubernetes Service using GitHub Actions.",
-        "Redesigned the existing architecture to use an asynchronous messaging bus instead of REST APIs for microservice-to-microservice communication, which improved scalability and data integrity. Increased volume handling by 10 times from 5 to 49 million gallons, potentially reducing 450,000 tCO2 emissions.",
+        "Refactored the existing system design to use asynchronous messaging bus instead of REST APIs for microservice-to-microservice communication, which improved scalability and data integrity. Increased volume handling by 10 times from 5 to 49 million gallons, potentially reducing 450,000 tCO2 emissions.",
         "Developed RBAC module to make the platform multi-tenant/multi-persona, enabling the platform to unlock new markets with a 70% cost and TTM reduction.",
         "Contributed to open source and in-house capability building by developing various libraries such as an OData filter parser and Azure Service Bus wrapper for NestJS.",
       ],
@@ -195,8 +195,8 @@ const userData: UserData = {
       fromDate: "1st Apr, 2022",
       toDate: "10th Feb, 2023",
       points: [
-        `Pioneered a 'Pay per Use' solution using SAP IoT, SAP Subscription Billing and Edge Computing for Industrial IoT challenge. It created billing in SAP Subscription Billing service based on the usage of a crane mounted on a shipping vessel. Gained experience in provisioning and managing IoT sensor nodes.`,
-        `Worked on the design and development of the Invoice Scanning feature using machine learning to scan physical/digital invoices and create a copy in ByDesign. Reduced the time taken to create an invoice by 50%.`,
+        `Pioneered a 'Pay per Use' solution using SAP IoT, SAP Subscription Billing and Edge Computing for Industrial IoT challenge. It created billing in based on the usage of a crane mounted on a shipping vessel. Gained experience in provisioning and managing IoT sensor nodes.`,
+        `Worked on the technical design and development of the Invoice Scanning feature using machine learning to scan physical/digital invoices and create a copy in ByDesign. Reduced the time taken to create an invoice by 50%.`,
       ],
     },
     {
