@@ -145,7 +145,7 @@ const userData: UserData = {
       items: [
         { name: "MongoDB/NoSQL", level: 5 },
         { name: "Mongoose", level: 5 },
-        { name: "PostgreSQL/RDBMS", level: 4 },
+        { name: "PostgreSQL/Mysql/RDBMS", level: 4 },
         { name: "TypeORM", level: 4 },
         { name: "Redis", level: 3 },
       ],
@@ -182,7 +182,7 @@ const userData: UserData = {
       fromDate: "13th Feb, 2023",
       toDate: "Present",
       points: [
-        "Developed and maintained a blockchain-based book and claim platform for Sustainable Aviation Fuel, Avelia. Used React, NestJS, MongoDB, ether.js, and was deployed on Azure Kubernetes Service using GitHub Actions.",
+       "Worked on technical design and development of a blockchain-based book and claim platform for Sustainable Aviation Fuel, Avelia. Used React, NestJS, MongoDB, ether.js, and was deployed on Azure Kubernetes Service using GitHub Actions.",
         "Redesigned the existing architecture to use an asynchronous messaging bus instead of REST APIs for microservice-to-microservice communication, which improved scalability and data integrity. Increased volume handling by 10 times from 5 to 49 million gallons, potentially reducing 450,000 tCO2 emissions.",
         "Developed RBAC module to make the platform multi-tenant/multi-persona, enabling the platform to unlock new markets with a 70% cost and TTM reduction.",
         "Contributed to open source and in-house capability building by developing various libraries such as an OData filter parser and Azure Service Bus wrapper for NestJS.",
