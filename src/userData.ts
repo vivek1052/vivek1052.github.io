@@ -103,7 +103,7 @@ const userData: UserData = {
         { name: "NestJS", level: 5 },
         { name: "Express.js", level: 5 },
         { name: "SAP Capire", level: 4 },
-        { name: "Mocha/Jest(Testing framework)", level: 5 },
+        { name: "Mocha/Jest(Unit Testing frameworks)", level: 5 },
         { name: "Golang", level: 2 },
       ],
     },
@@ -196,7 +196,7 @@ const userData: UserData = {
       toDate: "10th Feb, 2023",
       points: [
         `Pioneered a 'Pay per Use' solution using SAP IoT, SAP Subscription Billing and Edge Computing for Industrial IoT challenge. It created billing in based on the usage of a crane mounted on a shipping vessel. Gained experience in provisioning and managing IoT sensor nodes.`,
-        `Worked on the technical design and development of the Invoice Scanning feature using machine learning to scan physical/digital invoices and create a copy in ByDesign. Reduced the time taken to create an invoice by 50%.`,
+        `Worked on the LLD and development of the Invoice Scanning feature using machine learning to scan physical/digital invoices and create a copy in ByDesign. Reduced the time taken to create an invoice by 50%.`,
       ],
     },
     {
