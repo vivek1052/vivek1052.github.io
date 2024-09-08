@@ -103,7 +103,7 @@ const userData: UserData = {
         { name: "NestJS", level: 5 },
         { name: "Express.js", level: 5 },
         { name: "SAP Capire", level: 4 },
-        { name: "Mocha/Jest(Unit Testing frameworks)", level: 5 },
+        { name: "Mocha/Jest", level: 5 },
         { name: "Golang", level: 2 },
       ],
     },
@@ -182,7 +182,7 @@ const userData: UserData = {
       fromDate: "13th Feb, 2023",
       toDate: "Present",
       points: [
-       "Worked on technical design and development of a blockchain-based book and claim platform for Sustainable Aviation Fuel, Avelia. Used React, NestJS, MongoDB, ether.js, and was deployed on Azure Kubernetes Service using GitHub Actions.",
+        "Worked on technical design and development of a blockchain-based book and claim platform for Sustainable Aviation Fuel, Avelia. Used React, NestJS, MongoDB, ether.js, and was deployed on Azure Kubernetes Service using GitHub Actions.",
         "Refactored the existing system design to use asynchronous messaging bus instead of REST APIs for microservice-to-microservice communication, which improved scalability and data integrity. Increased volume handling by 10 times from 5 to 49 million gallons, potentially reducing 450,000 tCO2 emissions.",
         "Developed RBAC module to make the platform multi-tenant/multi-persona, enabling the platform to unlock new markets with a 70% cost and TTM reduction.",
         "Contributed to open source and in-house capability building by developing various libraries such as an OData filter parser and Azure Service Bus wrapper for NestJS.",
