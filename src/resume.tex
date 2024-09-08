@@ -1,0 +1,268 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Vivek Parashar} \\ \vspace{1pt}
+    \small +91-9884916300 $|$ \href{mailto:vivekparashar811@gmail.com}{\underline{vivekparashar811@gmail.com}} $|$ 
+    \href{https://vivek1052.github.io/}{\underline{https://vivek1052.github.io}}
+\end{center}
+
+%-----------Summary--------------
+\section{Summary}
+  \small{Full-stack Cloud Native Software Engineer with 8 years of experience, ranging from building SaaS ERPs to distributed systems.}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer}{13th Feb, 2023 -- Present}
+      {Shell India Pvt Ltd}{Bengaluru}
+      \resumeItemListStart
+        \resumeItem{Worked on technical design and development of a blockchain-based book and claim platform for Sustainable Aviation Fuel, Avelia. Used React, NestJS, MongoDB, ether.js, and was deployed on Azure Kubernetes Service using GitHub Actions. Used Mocha \& Jest for unit testing and utilized TTD(Test Driven Development).}
+        \resumeItem{Refactored the existing system design to use asynchronous messaging bus instead of REST APIs for microservice-to-microservice communication, which improved scalability and data integrity. Increased volume handling by 10 times from 5 to 49 million gallons, potentially reducing 450,000 tCO2 emissions.}
+        \resumeItem{Developed RBAC module to make the platform multi-tenant/multi-persona, enabling the platform to unlock new markets with a 70\% cost and TTM reduction.}
+        \resumeItem{Awarded \emph{Continuous Development \& Improvement Award} for refactoring REST APIs with pagination and querying capabilities. 30\% reduction in the creation of new APIs. }
+        \resumeItem{Awarded \emph{Innersource Star} award for contributed to open source and in-house capability building by developing libraries such as an OData filter parser and Azure Service Bus wrapper for NestJS.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+   % \resumeSubSubheading
+   %  {Software Engineer I}{Oct 2014 - Sep 2016}
+   %  \resumeItemListStart
+   %     \resumeItem{Apache Beam}
+   %       {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+   %  \resumeItemListEnd
+   % \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Developer}{1st Apr, 2022 -- 10th Feb, 2023}
+      {SAP Labs}{Bengaluru}
+      \resumeItemListStart
+        \resumeItem{Pioneered a 'Pay per Use' solution using SAP IoT, SAP Subscription Billing and Edge Computing for Industrial IoT challenge. It created billing in based on the usage of a crane mounted on a shipping vessel. Collaborated with cross functions team members for delivery of solution.}
+        \resumeItem{Worked on the LLD and development of the Invoice Scanning feature using machine learning to scan physical/digital invoices and create a copy in ByDesign. Reduced the time taken to create an invoice by 50\%.}
+        \resumeItem{Took interviews of potential candidates and gave training for product handover to third party vendors.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Associate Developer}{4th May, 2020 -- 31st Mar, 2022}
+      {SAP Labs}{Bengaluru}
+      \resumeItemListStart
+        \resumeItem{Contributed towards migration of the SaaS ERP product, Business ByDesign, from ABAP to a Node.js-based framework running in a containerized environment using Docker and Kubernetes. Used PostgreSQL as database. Potentially reduced OpEx by 30\% by using cloud service providers such as Alicloud and GCP.}
+        \resumeItem{Recognized with \emph{Take It Higher} award for development of a Kanban tool using SAP Capire (a cloud-native development framework), Node.js, and HANA database, which was deployed on SAP Cloud Foundry. Set up a data ingestion pipeline into SAP Analytics Cloud using REST API for reporting purposes.}
+        \resumeItem{Gained experience deploying containerized applications using Jenkins CI/CD pipelines. Learned about design patterns and their use within enterprise-grade framework architecture.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Consultant}{1st Sep, 2019 -- 30th Apr, 2020}
+      {Deloitte Consulting USI}{Bengaluru}
+      \resumeItemListStart
+        \resumeItem{Acted as a full-stack developer for Caterpillar's Transport Unit Monitoring web application using OpenUI5 and OData(REST) APIs. Reduced the lead time for detecting issues in transport units by 40\%. Recognized with \emph{Applause Award}.}
+        \resumeItem{Mentored interns on project codebase. }
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Business Technology Analyst}{8th Aug, 2016 -- 31st Aug, 2019}
+      {Deloitte Consulting USI}{Bengaluru}
+      \resumeItemListStart
+        \resumeItem{Engineered OData (REST) APIs using SAP Gateway and an SQL database to be consumed by Konica Minolta's E-commerce web application, which was developed using OpenUI5 (a JavaScript framework).}
+        \resumeItem{Recognized with \emph{Spot Award} for designing and development of an IDOC monitoring and processing tool using OpenUI5 and OData services.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {VIT University}{Jun 2012 -- May 2016}
+      {Bachelor of Technology in Electronics and Communication Engineering}{9.01 CGPA}
+  \resumeSubHeadingListEnd
+  
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Azure Service Bus Wrapper for NestJS} $|$ \emph{TypeScript, Azure Service Bus, NestJS}}{Nov 2023 -- Dec 2023}
+          \resumeItemListStart
+            \resumeItem{This is a wrapper library which provides modules for Azure Service Bus package. It allows creating Queues/Controllers using decorators just as Nestjs. Connections are pooled and reused preventing duplicate connections being made to same resource.}
+            \resumeItem{\href{https://github.com/vivek1052/azure-service-bus-nestjs-wrapper}{\underline{https://github.com/vivek1052/azure-service-bus-nestjs-wrapper}}}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{OData Filter Parser} $|$ \emph{TypeScript}}{Jun 2023 -- Jul 2023}
+          \resumeItemListStart
+            \resumeItem{This is a database agnostic library which can be used to parse OData \$filter to a database specific query. Currently it supports MongoDB and SQL.}
+           \resumeItem{\href{https://github.com/vivek1052/odata-filter-parser}{\underline{https://github.com/vivek1052/odata-filter-parser}}}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Darpan} $|$ \emph{SAP Capire, CAP CDS, Vue.js, Docker}}{Jul 2021 -- Jun 2022}
+          \resumeItemListStart
+            \resumeItem{A Photo gallery/manager app written in SAP CAPIRE and Vuejs which can be self hosted as a docker container.}
+           \resumeItem{\href{https://github.com/vivek1052/Darpan}{\underline{https://github.com/vivek1052/Darpan}}}
+          \resumeItemListEnd
+
+       \resumeProjectHeading
+          {\textbf{Portfolio} $|$ \emph{Next.js, Tailwindcss, TypeScript}}{Jul 2021 -- Jun 2022}
+          \resumeItemListStart
+            \resumeItem{Developer Portfolio website.}
+           \resumeItem{\href{https://vivek1052.github.io/}{\underline{https://vivek1052.github.io/}}}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+%-----------Certifications-----------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Microsoft Certified: Azure Fundamentals}{25th Mar, 2023}
+      {Microsoft}{\href{https://www.credly.com/badges/aa9c3ec7-8e5d-4e0f-bd37-19fb382603f8/linked_in_profile}{\underline{Verify}}}
+
+     \resumeSubheading
+      {Certified In Cybersecurity}{23rd Aug, 2024}
+      {ISC2}{\href{https://www.credly.com/badges/ffbfd08f-225c-435c-aac2-856c6e5c82b7/public_url}{\underline{Verify}}}
+
+    \resumeSubheading
+      {LFC131: Green Software for Practitioners}{14th Mar, 2024}
+      {Linux Foundation}{\href{https://www.credly.com/badges/92e3361f-275d-44db-9bfd-1c926ea53289/public_url}{\underline{Verify}}}
+
+    \resumeSubheading
+      {Open SAP UI5}{28th Jan, 2020}
+      {SAP}{}
+
+    \resumeSubheading
+      {Software Developer Boot Camp}{Aug 2023}
+      {Construx Software}{}
+  \resumeSubHeadingListEnd
+
+  
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: TypeScript, JavaScript, Go, HTML/CSS} \\
+     \textbf{Frameworks}{: Node.js, NestJS, React, Express.js, SAP Capire, Mocha, Jest, OpenUI5, Next.js, Vue.js } \\
+     \textbf{Developer Tools}{: Git, Docker, Docker-compose, Kubernetes, Github Actions, Terraforms, SonarQube, Mend} \\
+     \textbf{Databases}{: MongoDB, Mongoose, PostgreSQL, MySQL, Redis, TypeORM} \\
+     \textbf{Protocols}{: REST, Odata, GraphQL, Message Queues, Event-Driven, Pub-Sub, OIDC, Oauth2} \\
+     \textbf{System Designs}{: Microservices, Monolith, MVC, Clean architecture, Onion architecture, SaaS, PaaS, IaaS} \\
+     \textbf{Cloud Products}{: Azure Kubernetes Service, Azure Service Bus, Azure Key Vault, Azure Blob Storage, Azure WAF, Azure Container Registry, Azure Functions }
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

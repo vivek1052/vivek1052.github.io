@@ -145,7 +145,7 @@ const userData: UserData = {
       items: [
         { name: "MongoDB/NoSQL", level: 5 },
         { name: "Mongoose", level: 5 },
-        { name: "PostgreSQL/Mysql/RDBMS", level: 4 },
+        { name: "PostgreSQL/MySQL/RDBMS", level: 4 },
         { name: "TypeORM", level: 4 },
         { name: "Redis", level: 3 },
       ],
@@ -185,7 +185,8 @@ const userData: UserData = {
         "Worked on technical design and development of a blockchain-based book and claim platform for Sustainable Aviation Fuel, Avelia. Used React, NestJS, MongoDB, ether.js, and was deployed on Azure Kubernetes Service using GitHub Actions.",
         "Refactored the existing system design to use asynchronous messaging bus instead of REST APIs for microservice-to-microservice communication, which improved scalability and data integrity. Increased volume handling by 10 times from 5 to 49 million gallons, potentially reducing 450,000 tCO2 emissions.",
         "Developed RBAC module to make the platform multi-tenant/multi-persona, enabling the platform to unlock new markets with a 70% cost and TTM reduction.",
-        "Contributed to open source and in-house capability building by developing various libraries such as an OData filter parser and Azure Service Bus wrapper for NestJS.",
+        "Awarded 'Continuous Development & Improvement Award' for refactoring REST APIs with pagination and querying capabilities. 30% reduction in the creation of new APIs.",
+        "Awarded 'Innersource Star' award for contributed to open source and in-house capability building by developing various libraries such as an OData filter parser and Azure Service Bus wrapper for NestJS.",
       ],
     },
     {
@@ -207,7 +208,7 @@ const userData: UserData = {
       toDate: "31st Mar, 2022",
       points: [
         `Contributed towards migration of the SaaS ERP product, Business ByDesign, from ABAP to a Node.js-based framework running in a containerized environment using Docker and Kubernetes. Used PostgreSQL as database. Potentially reduced OpEx by 30% by using cloud service providers such as Alicloud and GCP.`,
-        `Worked on the development of a Kanban tool using SAP Capire (a cloud-native development framework), Node.js, and HANA database, which was deployed on SAP Cloud Foundry. Set up a data ingestion pipeline into SAP Analytics Cloud using REST API for reporting purposes.`,
+        `Recognized with 'Take It Higher' award for  development of a Kanban tool using SAP Capire (a cloud-native development framework), Node.js, and HANA database, which was deployed on SAP Cloud Foundry. Set up a data ingestion pipeline into SAP Analytics Cloud using REST API for reporting purposes.`,
         `Gained experience deploying containerized applications using Jenkins CI/CD pipelines. Learned about design patterns and their use within enterprise-grade framework architecture.`,
       ],
     },
@@ -218,7 +219,7 @@ const userData: UserData = {
       fromDate: "1st Sep, 2019",
       toDate: "30th Apr, 2020",
       points: [
-        `Acted as a full-stack developer for Caterpillar's Transport Unit Monitoring web application using OpenUI5 and OData(REST) APIs. Reduced the lead time for detecting issues in transport units by 30%.`,
+        `Acted as a full-stack developer for Caterpillar's Transport Unit Monitoring web application using OpenUI5 and OData(REST) APIs. Reduced the lead time for detecting issues in transport units by 40%. Recognized with 'Applause Award'.`,
       ],
     },
     {
@@ -229,13 +230,13 @@ const userData: UserData = {
       toDate: "31st Aug, 2019",
       points: [
         `Engineered OData (REST) APIs using SAP Gateway and an SQL database to be consumed by Konica Minolta's E-commerce web application, which was developed using OpenUI5 (a JavaScript framework).`,
-        `Designed and developed an IDOC monitoring and processing tool using OpenUI5 and OData services.`,
+        `Recognized with 'Spot Award' for designing and development of an IDOC monitoring and processing tool using OpenUI5 and OData services.`,
       ],
     },
   ],
   education: [
     {
-      title: "BTech in Electronics and Comm. Engineering",
+      title: "BTech in Electronics and Communication Engineering",
       institute: "VIT University",
       fromDate: "2012",
       toDate: "2016",
@@ -303,7 +304,7 @@ const userData: UserData = {
       issuer: "Linux Foundation",
       issuedDate: "Mar 2024",
       validationLink:
-        "https://www.credly.com/earner/earned/badge/92e3361f-275d-44db-9bfd-1c926ea53289",
+        "https://www.credly.com/badges/92e3361f-275d-44db-9bfd-1c926ea53289/public_url",
     },
     {
       title: "Open SAP UI5",
