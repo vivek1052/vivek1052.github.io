@@ -68,7 +68,7 @@ interface UserData {
 
 const userData: UserData = {
   name: "Vivek Parashar",
-  title: "Full-Stack Native Software Engineer | 8+ Years Exp.",
+  title: "Full-Stack Cloud Native Software Engineer | 8+ Years Exp.",
   subtitle: "MERN Stack | Azure Certified | Shell-SAP-Deloitte",
   aboutMe:
     "I am a full-stack Cloud Native Software Engineer with 8 years of experience, ranging from building ERPs to distributed systems.",
@@ -135,7 +135,7 @@ const userData: UserData = {
         { name: "REST+HATEOAS", level: 5 },
         { name: "OData", level: 5 },
         { name: "Message Queues", level: 5 },
-        { name: "Azure Service Bus", level: 5 },
+        { name: "Event Driven", level: 5 },
         { name: "Pub Sub/Events", level: 3 },
         { name: "GraphQL", level: 3 },
       ],
@@ -145,7 +145,7 @@ const userData: UserData = {
       items: [
         { name: "MongoDB/NoSQL", level: 5 },
         { name: "Mongoose", level: 5 },
-        { name: "PostgreSQL/MySQL/RDBMS", level: 4 },
+        { name: "PostgreSQL/MySQL", level: 4 },
         { name: "TypeORM", level: 4 },
         { name: "Redis", level: 3 },
       ],
@@ -165,8 +165,8 @@ const userData: UserData = {
       items: [
         { name: "Monolith", level: 5 },
         { name: "Microservices", level: 4 },
-        { name: "MVC", level: 4 },
-        { name: "Onion Architecture", level: 3 },
+        { name: "Distributed Tracing", level: 4 },
+        { name: "Async Communication", level: 4 },
       ],
     },
     {
@@ -182,11 +182,12 @@ const userData: UserData = {
       fromDate: "13th Feb, 2023",
       toDate: "Present",
       points: [
-        "Worked on technical design and development of a blockchain-based book and claim platform for Sustainable Aviation Fuel, Avelia. Used React, NestJS, MongoDB, ether.js, and was deployed on Azure Kubernetes Service using GitHub Actions.",
-        "Refactored the existing system design to use asynchronous messaging bus instead of REST APIs for microservice-to-microservice communication, which improved scalability and data integrity. Increased volume handling by 10 times from 5 to 49 million gallons, potentially reducing 450,000 tCO2 emissions.",
-        "Developed RBAC module to make the platform multi-tenant/multi-persona, enabling the platform to unlock new markets with a 70% cost and TTM reduction.",
+        "Worked on technical design, build, and operation of a blockchain-based book and claim platform for Sustainable Aviation Fuel, Avelia, as part of a SCRUM team using agile methodologies.",
+        "Used React, NestJS, MongoDB, Opentelemetry, and deployed on Azure Kubernetes Service using GitHub Actions as the CI/CD pipeline. Adopted TTD (Test Driven Development) and used Mocha and Jest for writing unit tests.",
+        "Identified bottleneck in existing system design and mitigated it by using asynchronous messaging bus instead of RESTful APIs for microservice-to-microservice communication, which improved scalability and robustness. Increased volume handling by 10 times from 5 to 49 million gallons, potentially reducing 450,000 tCO2 emissions.",
+        "Led the design and development of RBAC module to tackle complex problem of making the platform multi-tenant/multi-persona. Enabled the platform to unlock new markets with a 70% cost and TTM reduction.",
         "Awarded 'Continuous Development & Improvement Award' for refactoring REST APIs with pagination and querying capabilities. 30% reduction in the creation of new APIs.",
-        "Awarded 'Innersource Star' award for contributed to open source and in-house capability building by developing various libraries such as an OData filter parser and Azure Service Bus wrapper for NestJS.",
+        "Awarded 'Innersource Star' award for contributed to open source and in-house capability building by developing libraries such as an OData filter parser and Azure Service Bus wrapper for NestJS.",
       ],
     },
     {
@@ -196,8 +197,8 @@ const userData: UserData = {
       fromDate: "1st Apr, 2022",
       toDate: "10th Feb, 2023",
       points: [
-        `Pioneered a 'Pay per Use' solution using SAP IoT, SAP Subscription Billing and Edge Computing for Industrial IoT challenge. It created billing in based on the usage of a crane mounted on a shipping vessel. Gained experience in provisioning and managing IoT sensor nodes.`,
-        `Worked on the LLD and development of the Invoice Scanning feature using machine learning to scan physical/digital invoices and create a copy in ByDesign. Reduced the time taken to create an invoice by 50%.`,
+        `Pioneered a 'Pay per Use' solution using SAP IoT, SAP Subscription Billing and Edge Computing for Industrial IoT challenge. It created billing in based on the usage of a crane mounted on a shipping vessel. Collaborated with cross functions team members for delivery of solution.`,
+        `Worked on the LLD and development of the Invoice Scanning feature using machine learning to scan physical/digital invoices and create a copy in ByDesign. Reduced the time taken to create an invoice by 50%`,
       ],
     },
     {
@@ -319,42 +320,37 @@ const userData: UserData = {
       title: "Continuous Development & Improvement Award",
       issuer: "Shell India Pvt Ltd",
       issuedDate: "2023",
-      description:
-        "Awarded for revamping the Avelia platform service-service communication and retrofitting REST APIs with querying/pagination capabilities.",
+      description: "",
     },
     {
       title: "Innersource Star",
       issuer: "Shell India Pvt Ltd",
       issuedDate: "2023",
-      description:
-        "Awarded for contributing to Innersource(Shell's reuse platform).",
+      description: "",
     },
     {
       title: "Take It Higher",
       issuer: "SAP Labs SME Application Development",
       issuedDate: "2021",
-      description:
-        "Received award for innovations of products, tools, processes, and constantly striving to improve things, for proposing new ideas.",
+      description: "",
     },
     {
       title: "Applause Award",
       issuer: "Deloitte USI Consulting",
       issuedDate: "2019",
-      description:
-        "Appreciated for outstanding performance for client Caterpillar.",
+      description: "",
     },
     {
       title: "Spot Award",
       issuer: "Deloitte USI Consulting",
       issuedDate: "2018",
-      description:
-        "Appreciated for contributing towards UI5 B2B Workbench tool.",
+      description: "",
     },
     {
       title: "Spot Award",
       issuer: "Deloitte USI Consulting",
       issuedDate: "2017",
-      description: "Appreciated for performance on West Pharma project.",
+      description: "",
     },
   ],
   articles: [
